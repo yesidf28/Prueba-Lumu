@@ -60,7 +60,7 @@ public class ContadorPalabras {
                         System.out.println(k + " : " + palabras2.get(k));
                     }
                     System.out.println("");
-                    System.out.println("Numero de palabras: " + palabras.size());
+                    System.out.println("Numero de palabras*****: " + palabras.size());
 
                     // CIERRA LA LECTURA
                     archivoLeer.close();

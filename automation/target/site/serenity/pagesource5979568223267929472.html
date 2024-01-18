@@ -1,0 +1,1528 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en-US"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;<br/>
+  &lt;meta name="sa_site" content="1"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;title&gt;WordCounter - Count Words &amp; Correct Writing&lt;/title&gt;<br/>
+  &lt;meta name="description" content="Copy and paste your text into the online editor to count its words and characters, check keyword density, and correct writing mistakes. Bookmark it now, it’s free and easy."&gt;<br/>
+  &lt;meta name="keywords" content="word counter, word count, character count"&gt;<br/>
+  &lt;meta property="og:image" content="https://wordcounter.net/images/word-counter.jpg"&gt;<br/>
+  &lt;link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"&gt;<br/>
+  &lt;link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"&gt;<br/>
+  &lt;meta name="msapplication-TileColor" content="#202020"&gt;<br/>
+  &lt;meta name="msapplication-TileImage" content="/images/icon-144.png"&gt;<br/>
+  &lt;style&gt;<br/>
+.login-form .auth-clients .auth-client{margin: 0 0 11px 0;}<br/>
+.login-form .auth-clients .auth-client{margin-right: 2px;}<br/>
+.login-form .auth-clients .auth-client:last-child{margin-right: 0;}<br/>
+.signup-form .form-control, .login-form .form-control{height: 45px; border-radius: 2px;}<br/>
+.signup-form .btn-login, .login-form .btn-login{width: 100%; height: 44px; border-radius: 1px;}<br/>
+.signup-form .error-summary ul, .login-form .error-summary ul{list-style-type: none; }<br/>
+.or-separator{text-align: center; margin: 18px 0; font-size: 12px; color: #c7c6c6;}<br/>
+.or-separator:before, .or-separator:after{content: ''; border-bottom: 1px solid #e8e8e8; width: 40%; display: inline-block; margin: 2px;}<br/>
+&lt;/style&gt;<br/>
+  &lt;script src="https://connect.facebook.net/en_US/sdk.js?hash=18eccda4439ef78b3485f0de6efa5b91" async crossorigin="anonymous"&gt;&lt;/script&gt;<br/>
+  &lt;script id="twitter-wjs" async src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript"&gt;if('undefined' !== 'undefined') {<br/>
+var user_id_for_goal = 'undefined';<br/>
+}<br/>
+var variable_for_index_page = true;<br/>
+var images_abs_path = 'https://wordcounter.net/images';<br/>
+var abs_path = 'https://wordcounter.net/';<br/>
+var share_path = 'https://wordcounter.net/';&lt;/script&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"&gt;<br/>
+  &lt;style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe"&gt;.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}<br/>
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}<br/>
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title&gt;span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}<br/>
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}<br/>
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;div id="globalPreloader" style="display: block; position: fixed; top: 51px; left: 0px; right: 0px; height: 3px; z-index: 9999;"&gt;<br/>
+   &lt;div style="width: 99.9827%; height: 100%; background-color: rgb(0, 102, 255); overflow: hidden;"&gt;<br/>
+    &nbsp;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script&gt;<br/>
+document.getElementById('globalPreloader').style.display = 'block';<br/>
+&lt;/script&gt;<br/>
+  &lt;link href="/min/a719386aa6755386ca3d00da5fd47132e03dbbfb.css" rel="stylesheet"&gt;<br/>
+  &lt;div id="fb-root" class=" fb_reset"&gt;<br/>
+   &lt;div style="position: absolute; top: -10000px; width: 0px; height: 0px;"&gt;<br/>
+    &lt;div&gt;&lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="data-block" data-log-url="/site/log" data-spell-check-url="/site/proxy?url=" data-css-path="/css/"&gt;&lt;/div&gt;<br/>
+  &lt;div class="navbar navbar-default navbar-static-top" role="navigation"&gt;<br/>
+   &lt;div class="container"&gt;<br/>
+    &lt;div class="navbar-header"&gt;<br/>
+     &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="wc_navbar"&gt;&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;/button&gt;&lt;a class="navbar-brand" href="/" style="padding:5px 25px 5px 15px; background-repeat: no-repeat; background-position:15px;"&gt;&lt;img class="lazy loaded" data-src="/images/wc-logo.png" height="40" width="220" alt="Word Counter Logo" src="/images/wc-logo.png" data-was-processed="true"&gt;&lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="navbar-collapse collapse" aria-expanded="false" role="menu"&gt;<br/>
+     &lt;ul class="nav navbar-nav" id="wc_navbar"&gt;<br/>
+      &lt;li class="active"&gt;&lt;a href="/" data-tr-detail="home" class="active_bar" style="background-color: rgb(255, 255, 255);"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/blog/" data-tr-detail="blog"&gt;Blog&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class=""&gt;&lt;a href="#" id="wc-dropdown-menu" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"&gt;&lt;span data-tr-detail="more"&gt;More&lt;/span&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+       &lt;ul class="dropdown-menu" role="menu" style="left: -1px;"&gt;<br/>
+        &lt;li class=""&gt;&lt;a href="/our-tools" style="margin-top: 0; padding-bottom: 5px; padding-top: 5px" data-tr-detail="more_tools"&gt;More Tools&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li class=""&gt;&lt;a href="/help-us" style="margin-top: 0; padding-bottom: 5px; padding-top: 5px" data-tr-detail="help_us_out"&gt;Help Us Out&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#" data-toggle="modal" data-target="#social-login-modal"&gt;&lt;span data-tr-detail="sign_in"&gt;Sign In&lt;/span&gt;&lt;i class="fa fa-sign-in" aria-hidden="true" style="font-size: 16px; margin-left: 5px"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li style="margin-top:14px; margin-left:8px; display:none"&gt;<br/>
+       &lt;div id="w1"&gt;<br/>
+        &lt;ul class="auth-clients"&gt;<br/>
+         &lt;li&gt;&lt;a class="twitter auth-link" href="/user/security/auth?authclient=twitter" title="Twitter"&gt;&lt;span class="auth-icon twitter"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a class="facebook auth-link" href="/user/security/auth?authclient=facebook" title="Facebook" data-popup-width="860" data-popup-height="480"&gt;&lt;span class="auth-icon facebook"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a class="google auth-link" href="/user/security/auth?authclient=google" title="Google"&gt;&lt;span class="auth-icon google"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="modal fade" id="social-login-modal" tabindex="-1" role="dialog" aria-labelledby="social-login-modal-label" aria-hidden="true"&gt;<br/>
+   &lt;div class="modal-dialog modal-lg"&gt;<br/>
+    &lt;div class="modal-content"&gt;<br/>
+     &lt;div class="modal-header"&gt;<br/>
+      &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+      &lt;h4 class="modal-title" id="social-login-modal-label" data-tr-detail="sign_in"&gt;Sign In&lt;/h4&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="modal-body"&gt;<br/>
+      &lt;div class="row"&gt;<br/>
+       &lt;div class="col-md-7"&gt;<br/>
+        &lt;span data-tr-detail="sign_in_modal_text1"&gt;When you sign in to WordCounter you get access to some awesome features.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;i class="fa fa-floppy-o" style="font-size: 17px"&gt;&lt;/i&gt;&nbsp; &lt;b data-tr-detail="auto_save_modal"&gt;Auto Save&lt;/b&gt;&lt;br&gt;&lt;small style="color:gray" data-tr-detail="sign_in_modal_text2"&gt;We'll save whatever you're working on automatically and even store multiple versions so you can access it in case your browser crashes or you accidentally close your browser.&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;i class="fa fa-trophy" style="font-size: 17px"&gt;&lt;/i&gt;&nbsp; &lt;b data-tr-detail="writing_goals"&gt;Writing Goals&lt;/b&gt;&lt;br&gt;&lt;small style="color:gray" data-tr-detail="sign_in_modal_text3"&gt;Setup writing goals you want to work toward and even embed them in your blog or website.&lt;/small&gt;&lt;br&gt;&lt;i class="fa fa-shopping-cart" style="margin-top:20px; font-size: 18px"&gt;&lt;/i&gt;&nbsp; &lt;b data-tr-detail="fewer_advertisements"&gt;20% OFF Grammarly Premium&lt;/b&gt;&lt;br&gt;&lt;small style="color:gray" data-tr-detail="sign_in_modals_text4"&gt;Enable unlimited checks for plagiarism and writing issues. Connects seamlessly with your free WordCounter account.&lt;/small&gt;&lt;br&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-md-5"&gt;<br/>
+        &lt;div class="login-form "&gt;<br/>
+         &lt;div class="site-login-form"&gt;<br/>
+          &lt;p data-tr-detail="login_with_your_site_account"&gt;Login with your site account:&lt;/p&gt;<br/>
+          &lt;form id="login-form" class="" action="/user/security/login" method="post"&gt;<br/>
+           &lt;input type="hidden" name="_csrf" value="MklhVlhvSEFnBSI6Kjh/BH4vODwPKzoRfQgAFB01eypKOlRmFABlEg=="&gt;<br/>
+           &lt;div class="error-summary alert alert-danger" style="display:none"&gt;<br/>
+            &lt;ul&gt;&lt;/ul&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="form-group field-loginform-email required"&gt;<br/>
+            &lt;div&gt;<br/>
+             &lt;input type="text" id="loginform-email" class="form-control" name="LoginForm[email]" placeholder="Email" data-tr-detail="email"&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="form-group field-loginform-password required"&gt;<br/>
+            &lt;div&gt;<br/>
+             &lt;input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" placeholder="Password" data-tr-detail="password"&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="form-group"&gt;<br/>
+            &lt;button type="submit" class="btn btn-primary btn-login" name="login-button" data-tr-detail="login"&gt;Login&lt;/button&gt;<br/>
+            &lt;div class="text-center" style="margin-top: 8px; font-size: 12px;"&gt;<br/>
+             &lt;a href="/user/security/request-password-reset" data-link="signupFormLink" style="text-decoration: underline !important;" data-tr-detail="forgot_your_password"&gt;Forgot your password?&lt;/a&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="text-center" style="margin-top: 8px; font-size: 12px;"&gt;<br/>
+             &lt;a href="javascript:void(0);" data-link="signupFormLink" style="text-decoration: underline !important;" data-tr-detail="dont_have_an_account_yet_create_one_now_its_free"&gt;Don't have an account yet? Create one now, it's FREE&lt;/a&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/form&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="signup-form hidden"&gt;<br/>
+         &lt;p data-tr-detail="create_a_site_account"&gt;Create a site account:&lt;/p&gt;<br/>
+         &lt;form id="signup-form" class="" action="/site/signup" method="post"&gt;<br/>
+          &lt;input type="hidden" name="_csrf" value="MklhVlhvSEFnBSI6Kjh/BH4vODwPKzoRfQgAFB01eypKOlRmFABlEg=="&gt;<br/>
+          &lt;div class="error-summary alert alert-danger" style="display:none"&gt;<br/>
+           &lt;ul&gt;&lt;/ul&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="form-group field-signupform-email required"&gt;<br/>
+           &lt;div&gt;<br/>
+            &lt;input type="text" id="signupform-email" class="form-control" name="SignupForm[email]" placeholder="Email" data-tr-detail="email"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="form-group field-signupform-email_repeat required"&gt;<br/>
+           &lt;div&gt;<br/>
+            &lt;input type="text" id="signupform-email_repeat" class="form-control" name="SignupForm[email_repeat]" placeholder="Re-enter Email" data-tr-detail="re_enter_email"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="form-group field-signupform-password required"&gt;<br/>
+           &lt;div&gt;<br/>
+            &lt;input type="password" id="signupform-password" class="form-control" name="SignupForm[password]" placeholder="Password" data-tr-detail="password"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="form-group field-signupform-password_repeat required"&gt;<br/>
+           &lt;div&gt;<br/>
+            &lt;input type="password" id="signupform-password_repeat" class="form-control" name="SignupForm[password_repeat]" placeholder="Re-enter Password" data-tr-detail="re_enter_password"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="form-group"&gt;<br/>
+           &lt;button type="submit" class="btn btn-primary btn-login" name="login-button" data-tr-detail="create_account"&gt;Create Account&lt;/button&gt;<br/>
+           &lt;div class="text-center" style="margin-top: 8px; font-size: 12px;"&gt;<br/>
+            &lt;a href="javascript:void(0);" data-tr-detail="already_have_an_account_login" data-link="loginFormLink" style="text-decoration: underline !important;"&gt;Already have an account? Login&lt;/a&gt;&lt;br&gt;&lt;a href="/user/security/request-password-reset" style="text-decoration: underline !important;"&gt;Forgot your password (or want to change it)?&lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/form&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="modal-footer"&gt;<br/>
+      &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="close"&gt;Close&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="container"&gt;<br/>
+   &lt;div class="row"&gt;<br/>
+    &lt;div class="col-md-9" id="editor_container"&gt;<br/>
+     &lt;div class="message_output"&gt;&lt;/div&gt;<br/>
+     &lt;div style="position: relative;"&gt;<br/>
+      &lt;div id="replace_container"&gt;<br/>
+       &lt;p&gt;&lt;/p&gt;&lt;button type="button" class="btn btn-success" onclick="editor.replaceOneByOne();" data-tr-detail="yes"&gt;Yes&lt;/button&gt;&lt;button type="button" class="btn btn-default" onclick="editor.cancelOne();" data-tr-detail="skip_this_one"&gt;Skip this one&lt;/button&gt;&lt;button type="button" class="btn btn-default" onclick="editor.cancelAll();" data-tr-detail="skip_all"&gt;Skip all&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="row"&gt;<br/>
+      &lt;div class="col-md-12"&gt;<br/>
+       &lt;div id="top_counter"&gt;<br/>
+        &lt;div class="pull-left"&gt;<br/>
+         &lt;h1 style="margin:0"&gt;&lt;span class="counted" data-tr-detail="words_characters"&gt; 0 words 0 characters&lt;/span&gt;&lt;/h1&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="pull-right"&gt;<br/>
+         &lt;div class="btn-group"&gt;<br/>
+          &lt;button class="btn btn-default" style="line-height:.9" data-type="basic" id="version-btn" onclick="editor.changeOption(editor.basicVersionOptions); editor.setLanguageForSpeech();"&gt;&lt;i class="fa fa-external-link" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;"&gt;&lt;span data-tr-detail="go_basic" id="version-btn-label"&gt;GO BASIC&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button type="button" style="line-height:.9" class="btn btn-default" data-toggle="modal" data-target="#options-modal" id="options-btn"&gt;&lt;i class="fa fa-wrench" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span data-tr-detail="options" style="font-size:60%;"&gt;OPTIONS&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div style="clear:both"&gt;&lt;/div&gt;&lt;br&gt;<br/>
+        &lt;div class="row"&gt;<br/>
+         &lt;div class="col-md-12"&gt;<br/>
+          &lt;div class="grammarly_warning"&gt;&lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="top-btns-panel panel panel-default" style="margin-bottom:0"&gt;<br/>
+      &lt;div class="panel-heading"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;<br/>
+         &lt;div class="btn-group" role="group" aria-label="..."&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9;" class="btn btn-default _btncheck" id="spell-btn" data-target="_blank"&gt;&lt;i class="fa fa-check" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="spell"&gt;GRAMMAR &amp; SPELL CHECK&lt;/span&gt;&lt;span id="grammarlyOFF" style="background-color: rgb(201, 48, 44); color: white; padding: 0px 2px; margin-left: 2px; font-size: 60%;" data-tr-detail="off"&gt;OFF&lt;/span&gt;&lt;span id="grammarlyON" style="background-color:#009933; color:white;padding: 0 2px;margin-left:2px;font-size: 60%;display:none;" data-tr-detail="on"&gt;ON&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9;" class="btn btn-default dropdown-toggle" disabled data-toggle="dropdown" aria-expanded="false" id="thesaurus-btn" onclick="editor.thesaurus(event);"&gt;&lt;i class="fa fa-book" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="thesaurus"&gt;THESAURUS&lt;/span&gt;&lt;/button&gt;<br/>
+           &lt;ul class="dropdown-menu" role="menu" id="thesaurus_synonyms"&gt;&lt;/ul&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="case-btn" onclick=" ga('send', 'event', 'case', 'click button', 'button');" disabled&gt;&lt;i class="fa fa-text-height" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="case"&gt;CASE&lt;/span&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+           &lt;ul class="dropdown-menu" role="menu"&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="sentence-case-link" onclick="editor.changeCase(event, 'sentence'); ga('send', 'event', 'case', 'click option', 'Sentence Case')" data-tr-detail="sentence_case"&gt;Sentence case&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="title-case-link" onclick="editor.changeCase(event, 'title'); ga('send', 'event', 'case', 'click option', 'Title Case')" data-tr-detail="title_case"&gt;Title Case&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="upper-case-link" onclick="editor.changeCase(event, 'upper'); ga('send', 'event', 'case', 'click option', 'Uppercase')" data-tr-detail="uppercase"&gt;UPPERCASE&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="lower-case-link" onclick="editor.changeCase(event, 'lower'); ga('send', 'event', 'case', 'click option', 'lowercase')" data-tr-detail="lowercase"&gt;lowercase&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" class="btn btn-default" style="line-height:.9" id="activity-btn" data-toggle="modal" data-target="#social-login-modal"&gt;&lt;span class="glyphicon glyphicon-stats" style="line-height: 1.1"&gt;&lt;/span&gt;&lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="activity"&gt;ACTIVITY&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" class="btn btn-default" style="line-height:.9" id="save-btn" data-toggle="modal" data-target="#social-login-modal"&gt;&lt;span class="glyphicon glyphicon-save-file" style="line-height: 1.1"&gt;&lt;/span&gt;&lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="save"&gt;SAVE&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" class="btn btn-default" style="line-height:.9; display:none;" id="text-to-speech-btn" onclick="editor.showOrHideReadBox(this);"&gt;&lt;i class="fa fa-play" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="proof_read"&gt;PROOF READ&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="button-more-box" id="text-to-speech-controls" style="display:none;"&gt;<br/>
+           &lt;span title="Disable Read Box" id="close-read" class="glyphicon glyphicon-remove" onclick="editor.showOrHideReadBox('#text-to-speech-btn', 'close')"&gt;&lt;/span&gt;&lt;span class="text-to-speech-buttons"&gt;&lt;a href="#" class="btn btn-primary btn-sm" id="r-play-link" onclick="editor.startReading(event, this);"&gt;&lt;span class="glyphicon glyphicon-play"&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href="#" class="btn btn-primary btn-sm" id="r-pause-link" style="display:none; margin-left: 0" onclick="editor.pauseReading(event, this);"&gt;&lt;span class="glyphicon glyphicon-pause"&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href="#" class="btn btn-primary btn-sm" id="r-stop-link" style="margin-left: 2px;" onclick="editor.stopReading(event, this);"&gt;&lt;span class="glyphicon glyphicon-stop"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" class="btn btn-default record" style="line-height:.9; display:none;" id="speech-btn" onclick="editor.speech(this);"&gt;&lt;i class="fa fa-microphone" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="talk_to_type"&gt;TALK TO TYPE&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9" class="btn btn-default" data-toggle="modal" data-target="#social-login-modal" id="goal-btn" onclick="localStorage.setItem('goal_submit', true);"&gt;&lt;i class="fa fa-trophy" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="goal"&gt;GOAL&lt;/span&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9; display:none" class="btn btn-default" id="speed-btn" onclick="editor.showOrHideSpeedBox(this);"&gt;&lt;i class="fa fa-clock-o" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="speed"&gt;SPEED&lt;/span&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div id="copy" class="button-more-box" style="display:none;"&gt;<br/>
+           &lt;div style="float:left"&gt;<br/>
+            &lt;span class="time-block"&gt;&lt;span id="sw_h" class="digits"&gt;00&lt;/span&gt;: &lt;span id="sw_m" class="digits"&gt;00&lt;/span&gt;: &lt;span id="sw_s" class="digits"&gt;00&lt;/span&gt;: &lt;span id="sw_ms" class="digits"&gt;00&lt;/span&gt;&lt;/span&gt;&lt;span title="Disable Speed Box" id="close-typing-speed" class="glyphicon glyphicon-remove" onclick="editor.showOrHideSpeedBox('#speed-btn', 'close');"&gt;&lt;/span&gt;&lt;span class="speed-block"&gt;&lt;span data-tr-detail="speed-blog"&gt;Speed&lt;/span&gt;: &lt;span id="wpm"&gt;0&lt;/span&gt; &lt;span data-tr-detail="wpm"&gt;WPM&lt;/span&gt;&lt;/span&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div style="float:left; position: relative; width: 80px" class=""&gt;<br/>
+            &lt;a href="#" class="btn btn-primary btn-sm" id="sw-start-link" style="margin-left:6px" onclick="editor.startTimer(event);"&gt;&lt;span class="glyphicon glyphicon-play"&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href="#" class="btn btn-primary btn-sm" id="sw-pause-link" style="display:none; margin-left:6px" onclick="editor.pauseTimer(event);"&gt;&lt;span class="glyphicon glyphicon-pause"&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href="#" class="btn btn-primary btn-sm" id="sw-reset-link" style="margin-left:2px" onclick="editor.resetTimer(event);"&gt;&lt;span class="glyphicon glyphicon-stop"&gt;&lt;/span&gt;&lt;/a&gt;&lt;a href="#" data-tr-detail="share_this" title="Share This!" class="share_this_link" id="share-item-speed-link" data-toggle="modal" data-target="#share-modal" onclick="share.setSpeedBadge(); share.createDownloadLink('download-link', 'speed1');"&gt;&lt;i class="fa fa-share-alt-square" style="line-height:1.1; font-size: 70%"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div style="clear:both"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9; display:none" class="btn btn-default" id="print-btn" onclick="editor.printTextOfEditor();"&gt;&lt;i class="fa fa-print" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="print"&gt;Print&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9; display:none" class="btn btn-default" id="upload-btn" data-toggle="modal" data-target="#upload-file-modal"&gt;&lt;i class="fa fa-cloud-upload" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="upload"&gt;UPLOAD&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9; display:none" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="download-btn"&gt;&lt;i class="fa fa-cloud-download" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="download"&gt;DOWNLOAD&lt;/span&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+           &lt;ul class="dropdown-menu" role="menu"&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="download-text-as-pdf-link" onclick="editor.downloadText(event, 'pdf');" data-tr-detail="text_as_pdf"&gt;Text as .pdf&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="download-text-as-txt-link" onclick="editor.downloadText(event, 'txt');" data-tr-detail="text_as_txt"&gt;Text as .txt&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="#" id="download-text-as-doc-link" onclick="editor.downloadText(event, 'doc');" data-tr-detail="text_as_doc"&gt;Text as .doc&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9; display:none" class="btn btn-default" id="clean-text-btn" data-toggle="modal" data-target="#clean-text-modal"&gt;&lt;i class="fa fa-eraser" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="clean_text"&gt;CLEAN TEXT&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;&lt;button type="button" style="line-height:.9; display:none" class="btn btn-default" id="save-to-drive-btn" data-toggle="modal" data-target="#save-to-drive-modal"&gt;&lt;i class="fa fa-google" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="save_to_drive"&gt;SAVE TO DRIVE&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height: 0.9;" class="btn btn-default dropdown-toggle" aria-expanded="false" id="revisions-btn" data-toggle="modal" data-target="#social-login-modal"&gt;&lt;i class="fa fa-floppy-o" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="auto_save"&gt;AUTO-SAVE&lt;/span&gt;&lt;span style="background-color:#c9302c; color:white;padding: 0 2px;margin-left:2px;font-size: 60%;" data-tr-detail="off"&gt;OFF&lt;/span&gt;&lt;/button&gt;<br/>
+           &lt;ul class="dropdown-menu table-data" role="menu" id="revisions_ul"&gt;&lt;/ul&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9; display:none" class="btn btn-default" data-toggle="modal" data-target="#find-and-replace-modal" id="find-and-replace-btn"&gt;&lt;i class="fa fa-search" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="find_and_replace"&gt;FIND AND REPLACE&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;&lt;button type="button" style="line-height: 0.9;" class="btn btn-default" onclick="editor.editorClear();" id="clear-btn"&gt;&lt;i class="fa fa-trash-o" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="clear"&gt;CLEAR&lt;/span&gt;&lt;/button&gt;&lt;button type="button" style="line-height: 0.9;" class="btn btn-default" onclick="editor.editorUndo();" id="undo-btn"&gt;&lt;i class="fa fa-arrow-left" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="undo"&gt;UNDO&lt;/span&gt;&lt;/button&gt;&lt;button type="button" style="line-height: 0.9;" class="btn btn-default" onclick="editor.editorRedo();" id="redo-btn"&gt;&lt;i class="fa fa-arrow-right" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;" data-tr-detail="redo"&gt;REDO&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;div class="btn-group"&gt;<br/>
+           &lt;button type="button" style="line-height:.9;" id="more-btn" class="btn btn-default openOptionTab" data-tab="buttons" data-toggle="modal" data-target="#options-modal" onclick="editor.openOptionsTab(this);"&gt;&lt;i class="fa fa-th" style="line-height:1.1"&gt;&lt;/i&gt; &lt;br&gt;&lt;span style="font-size:60%;"&gt;&lt;span data-tr-detail="more-btn"&gt;MORE&lt;/span&gt; (&lt;span id="no_switch_buttons"&gt;9&lt;/span&gt;)&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="clearfix"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;form id="form"&gt;<br/>
+      &lt;div style="position: relative;" class="keywordsBox speechOutput"&gt;<br/>
+       &lt;div class="resizable-textarea"&gt;<br/>
+        &lt;span&gt;&lt;textarea placeholder="Start typing, or copy and paste your document here..." data-tr-detail="start_typing_or_copy_and_paste_your_document_here" class="form-control table-data finalResult textarea_revision processed" style="resize: none; overflow: hidden; height: 265.333px; min-height: 250px; font-family: Arial;" rows="12" id="box"&gt;&lt;/textarea&gt;<br/>
+         &lt;div class="grippie" style="margin-right: 0px;"&gt;&lt;/div&gt;&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div id="editor"&gt;&lt;/div&gt;<br/>
+     &lt;/form&gt;<br/>
+     &lt;div class="keywordsBox"&gt;<br/>
+      &lt;div id="box-readonly" class="table-data" onclick="editor.unHighlightWord(event);"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="panel panel-default" style="padding:0; margin:0"&gt;<br/>
+      &lt;div class="panel-footer"&gt;<br/>
+       &lt;div style="display:inline-block"&gt;<br/>
+        &lt;h4 style="display:inline-block; margin:0 10px 0 0;"&gt;&lt;span data-tr-detail="words_characters" class="counted"&gt; 0 words 0 characters&lt;/span&gt;&lt;/h4&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="swfloat" style="display:inline-block;"&gt;<br/>
+        &lt;div class="grammarly_warning"&gt;&lt;/div&gt;<br/>
+        &lt;div id="ask_gly"&gt;<br/>
+         &lt;div id="gly_ques" style="display: none;"&gt;<br/>
+          Do you have Grammarly installed? &lt;button id="gly_yes"&gt;Yes&lt;/button&gt;&lt;button id="gly_no"&gt;No&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="suggest_gly" style="display: none;"&gt;<br/>
+          Installing Grammarly enables additional corrections &lt;button id="gly_get_now"&gt;Get it now&lt;/button&gt;&lt;button id="gly_no_thanks"&gt;No thanks&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div id="gly_status"&gt;<br/>
+         &lt;div id="gly_status_text" style="display: none;"&gt;<br/>
+          &lt;img src="https://wordcounter.net/images/gly-on.png" height="20" alt="Grammarly enabled"&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="gly_status_options" style="display: none;"&gt;<br/>
+          Do you want to disable Grammarly? &lt;button id="yes_option"&gt;Yes&lt;/button&gt;&lt;button id="no_option"&gt;No&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="btn-group pull-right"&gt;&lt;/div&gt;<br/>
+       &lt;div style="clear:both"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;&lt;textarea class="form-control table-data finalResult" id="for_counting_lines" rows="1" style="visibility: hidden; height: 1px; padding:3px"&gt;&lt;/textarea&gt;&lt;textarea class="form-control table-data finalResult" id="for_keyword_density" rows="1" style="visibility: hidden; height: 1px; padding:3px"&gt;&lt;/textarea&gt;<br/>
+     &lt;div style="margin-top:0;"&gt;<br/>
+      &lt;div class="row" id="description"&gt;<br/>
+       &lt;div class="col-md-12"&gt;<br/>
+        &lt;div class="well" style="margin-top:10px"&gt;<br/>
+         &lt;h3 style="margin-top:0"&gt;What is WordCounter?&lt;/h3&gt;<br/>
+         &lt;p&gt;Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism. To check word count, simply place your cursor into the text box above and start typing. You'll see the number of characters and words increase or decrease as you type, delete, and edit them. You can also copy and paste text from another program over into the online editor above. The Auto-Save feature will make sure you won't lose any changes while editing, even if you leave the site and come back later. &lt;strong&gt;Tip: Bookmark this page now.&lt;/strong&gt;&lt;/p&gt;<br/>
+         &lt;p&gt;Knowing the word count of a text can be important. For example, if an author has to write a minimum or maximum amount of words for an article, essay, report, story, book, paper, you name it. WordCounter will help to make sure its word count reaches a specific requirement or stays within a certain limit.&lt;/p&gt;<br/>
+         &lt;p&gt;In addition, WordCounter shows you the top 10 keywords and keyword density of the article you're writing. This allows you to know which keywords you use how often and at what percentages. This can prevent you from over-using certain words or word combinations and check for best distribution of keywords in your writing.&lt;/p&gt;<br/>
+         &lt;p&gt;In the Details overview you can see the average speaking and reading time for your text, while Reading Level is an indicator of the education level a person would need in order to understand the words you’re using.&lt;/p&gt;<br/>
+         &lt;p style="margin-bottom:0"&gt;Disclaimer: We strive to make our tools as accurate as possible but we cannot guarantee it will always be so.&lt;/p&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="modal fade" id="glyup" tabindex="-1" role="dialog" aria-hidden="true"&gt;<br/>
+     &lt;div class="modal-dialog modal-lg"&gt;<br/>
+      &lt;div class="modal-content"&gt;<br/>
+       &lt;div class="modal-body"&gt;<br/>
+        &lt;a rel="nofollow" style="cursor:pointer" data-target="_blank" class="_btncheck"&gt;&lt;img class="lazy" data-src="images/glyup.png" style="width:100%;" alt=""&gt;&lt;/a&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="col-md-3" id="glya" style="text-align: center; padding-right: 2px !important; padding-left: 2px !important;"&gt;<br/>
+     &lt;a rel="nofollow" class="_btncheck" style="cursor:pointer" data-target="_blank"&gt;&lt;img class="lazy loaded" width="100%" style="max-width:288px;" data-src="images/wc-gly-instant.png" alt="" src="images/wc-gly-instant.png" data-was-processed="true"&gt;&lt;/a&gt;<br/>
+     &lt;div style="width:100%;padding-top:10px;"&gt;<br/>
+      &lt;a rel="nofollow" href="#" data-toggle="modal" data-target="#glyup"&gt;How it works »&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="col-md-3" id="glyb" style="text-align:center;padding-right: 2px!important;padding-left: 2px!important;display:none;"&gt;<br/>
+     &lt;a rel="nofollow" target="_blank" href="track/subbanner" data-target="_blank"&gt;&lt;img class="lazy" width="100%" style="max-width:288px;" data-src="images/wc-gly-upgrade.gif" alt=""&gt;&lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="col-md-3" id="details_container"&gt;<br/>
+     &lt;i class="fa fa-caret-left" style="display: none;"&gt;&lt;/i&gt; &lt;i class="fa fa-caret-right"&gt;&lt;/i&gt;<br/>
+     &lt;div class="panel-group" id="accordion" style="visibility: hidden;"&gt;<br/>
+      &lt;div class="panel panel-default" id="details_panel"&gt;<br/>
+       &lt;div class="panel-heading"&gt;<br/>
+        &lt;h3 class="panel-title"&gt;&lt;i class="openOptionTab fa fa-wrench" style="line-height:1.1" data-tab="details" data-toggle="modal" data-target="#options-modal" onclick="editor.openOptionsTab(this);"&gt;&lt;/i&gt; &lt;a class="accordion-toggle" data-tr-detail="details" data-toggle="collapse" data-target="#details-accordion" href="#" onclick="event.preventDefault(); setTimeout(function(){editor.changeOption({detailsPanelAccordion: $('#details-accordion').hasClass('in')});}, 500); editor.checkAccordion();" aria-expanded="true"&gt;Details&lt;/a&gt;&lt;/h3&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;ul id="details-accordion" class="list-group panel-collapse collapse in" aria-expanded="true" style=""&gt;<br/>
+        &lt;li class="list-group-item" data-title="Words"&gt;&lt;span class="badge" id="word_count"&gt;0&lt;/span&gt;&lt;span data-tr-detail="words_label"&gt;Words&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Unique Words" style="display: none;"&gt;&lt;span class="badge" id="unique_word_count"&gt;0&lt;/span&gt;&lt;span data-tr-detail="unique_words"&gt;Unique Words&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Characters"&gt;&lt;span class="badge" id="character_count"&gt;0&lt;/span&gt;&lt;span data-tr-detail="characters_label"&gt;Characters&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Characters (no spaces)" style="display: none;"&gt;&lt;span class="badge" id="character_count_no_spaces"&gt;0&lt;/span&gt;&lt;span data-tr-detail="characters_no_spaces"&gt;Characters (no spaces)&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Sentences"&gt;&lt;span class="badge" id="sentence_count"&gt;0&lt;/span&gt;&lt;span data-tr-detail="sentences"&gt;Sentences&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Longest Sentence (words)" style="display: none;"&gt;&lt;span class="badge" id="longest_sentence_words"&gt;0&lt;/span&gt;&lt;span data-tr-detail="longest_sentence_words"&gt;Longest Sentence (words)&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Shortest Sentence (words)" style="display: none;"&gt;&lt;span class="badge" id="shortest_sentence_words"&gt;0&lt;/span&gt;&lt;span data-tr-detail="shortest_sentence_words"&gt;Shortest Sentence (words)&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Avg. Sentence (words)" style="display: none;"&gt;&lt;span class="badge" id="avg_sentence_words"&gt;0&lt;/span&gt;&lt;span data-tr-detail="avg_sentence_words"&gt;Avg. Sentence (words)&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Avg. Sentence (chars)" style="display: none;"&gt;&lt;span class="badge" id="avg_sentence_chars"&gt;0&lt;/span&gt;&lt;span data-tr-detail="avg_sentence_chars"&gt;Avg. Sentence (chars)&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Avg. Word Length" style="display: none;"&gt;&lt;span class="badge" id="avg_word_length"&gt;0&lt;/span&gt;&lt;span data-tr-detail="avg_word_length"&gt;Avg. word length&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Paragraphs"&gt;&lt;span class="badge" id="paragraph_count"&gt;0&lt;/span&gt;&lt;span data-tr-detail="paragraphs"&gt;Paragraphs&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Pages" style="display: none;"&gt;&lt;span class="badge" id="avg_page_by_word"&gt;0&lt;/span&gt;&lt;span data-tr-detail="pages"&gt;Pages&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Syllables" style="display: none;"&gt;&lt;span class="badge" id="count_words_syllables"&gt;0&lt;/span&gt;&lt;span data-tr-detail="syllables"&gt;Syllables&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Lines" style="display: none;"&gt;&lt;span class="badge" id="lines_count"&gt;0&lt;/span&gt;&lt;span data-tr-detail="lines"&gt;Lines&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Words (Publisher)" style="display: none;"&gt;&lt;span class="badge" id="words_manuscript"&gt;0&lt;/span&gt;&lt;span data-tr-detail="words_publisher"&gt;Words (Publisher)&lt;/span&gt; &lt;a id="words_manuscript_tooltip" href="https://wordcounter.net/blog/2016/01/27/101200_publisher-word-count.html" target="_blank"&gt;&lt;span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-tr-detail="read_about_what_this_means" data-placement="bottom" title="" data-original-title="Read about what this means..."&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Reading Level"&gt;&lt;span class="badge" id="reading_level"&gt;N/A&lt;/span&gt;&lt;span data-tr-detail="reading_level"&gt;Reading Level&lt;/span&gt;&nbsp;&lt;a href="https://wordcounter.net/blog/2015/11/05/10805_writing-reading-level-tool.html" id="reading-level-link" target="_blank"&gt;&lt;span class="glyphicon glyphicon-question-sign" data-tr-detail="read_about_what_this_means" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Read about what this means..."&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+         &lt;div style="clear:both"&gt;&lt;/div&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Reading Time"&gt;&lt;span class="badge" id="reading_time"&gt;0 sec&lt;/span&gt;&lt;span data-tr-detail="reading_time"&gt;Reading Time&lt;/span&gt;&nbsp;&lt;span class="glyphicon glyphicon-question-sign" id="reading_time_tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Based on an average reading speed of 275 words per minute"&gt;&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Speaking Time"&gt;&lt;span class="badge" id="speaking_time"&gt;0 sec&lt;/span&gt;&lt;span data-tr-detail="speaking_time"&gt;Speaking Time&lt;/span&gt;&nbsp;&lt;span class="glyphicon glyphicon-question-sign" id="speaking_time_tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Based on an average speaking speed of 180 words per minute"&gt;&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item" data-title="Hand Writing Time" style="display: none;"&gt;&lt;span class="badge" id="hand_writing_time"&gt;0 sec&lt;/span&gt;&lt;span data-tr-detail="hand_writing_time"&gt;Hand Writing Time&lt;/span&gt;&nbsp;&lt;span class="glyphicon glyphicon-question-sign" id="hand_writing_time_tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Based on an average hand writing speed of 68 letters per minute"&gt;&lt;/span&gt;&lt;/li&gt;<br/>
+        &lt;li class="list-group-item"&gt;&lt;a href="#" id="more-details-link" class="openOptionTab" data-tab="details" data-toggle="modal" data-target="#options-modal" onclick="editor.openOptionsTab(this);"&gt;&lt;i class="fa fa-toggle-on" style="line-height:1.1"&gt;&lt;/i&gt; &lt;span data-tr-detail="more"&gt;More&lt;/span&gt; (&lt;span id="no_switch_details"&gt;12&lt;/span&gt;)&lt;/a&gt;&lt;a href="#" id="details-share-icon-link" style="margin-left: 10px" data-tr-detail="share_this" title="Share This!" data-toggle="modal" data-target="#share-details-modal" onclick="share.checkShareComponentAtTheBeginning(); share.createDownloadLink('download-details-panel-link', 'details_panel1');"&gt;&lt;i class="fa fa-facebook-square" style="line-height:1.1"&gt;&lt;/i&gt; &lt;i class="fa fa-twitter-square" style="line-height:1.1"&gt;&lt;/i&gt; &lt;span data-tr-detail="share"&gt;Share&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="panel panel-default keywordsBox" style="margin: 10px 0 0 0" id="kwd-density"&gt;<br/>
+       &lt;div class="panel-heading"&gt;<br/>
+        &lt;h3 class="panel-title"&gt;&lt;i class="openOptionTab fa fa-wrench" style="line-height:1.1" data-tab="keyword-density" data-toggle="modal" data-target="#options-modal" onclick="editor.openOptionsTab(this);"&gt;&lt;/i&gt; &lt;a class="accordion-toggle" data-tr-detail="keyword_density" data-toggle="collapse" data-target="#kwd-accordion" href="#" onclick="event.preventDefault(); setTimeout(function(){editor.changeOption({keywordDensityAccordion: $('#kwd-accordion').hasClass('in')});}, 500); editor.checkAccordion();" aria-expanded="true"&gt;Keyword Density&lt;/a&gt;&lt;a href="#" style="margin-left: 5px" onclick="event.preventDefault(); editor.changeOption({keywordDensityConsecutive: 1});" class="keyword_density_consecutive active_consecutive" id="consecutive-1-link"&gt;x1&lt;/a&gt;&nbsp; &lt;a href="#" onclick="event.preventDefault(); editor.changeOption({keywordDensityConsecutive: 2});" class="keyword_density_consecutive" id="consecutive-2-link"&gt;x2&lt;/a&gt;&nbsp; &lt;a href="#" onclick="event.preventDefault(); editor.changeOption({keywordDensityConsecutive: 3});" class="keyword_density_consecutive" id="consecutive-3-link"&gt;x3&lt;/a&gt;&lt;/h3&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div id="kwd-accordion" class="list-group panel-collapse table-data collapse in" style="max-height: 330px; overflow: auto;" onclick="editor.highlightWord(event);" aria-expanded="true"&gt;<br/>
+        &lt;div id="kwd-accordion-data"&gt;<br/>
+         &lt;li class="list-group-item"&gt;&lt;p class="message_for_empty_panel"&gt;Start typing your document to get a list of most used keywords&lt;/p&gt;&lt;/li&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="list-group-item"&gt;<br/>
+         &lt;a href="#" id="kwd-share-icon-link" data-tr-detail="share_this" title="Share This!" data-toggle="modal" data-target="#share-keyword-density-modal" onclick="share.getKeywordDensity(); share.createDownloadLink('download-keyword-density-link', 'kwd-density1');"&gt;&lt;i class="fa fa-facebook-square" style="line-height:1.1"&gt;&lt;/i&gt; &lt;i class="fa fa-twitter-square" style="line-height:1.1"&gt;&lt;/i&gt; &lt;span data-tr-detail="share"&gt;Share&lt;/span&gt;&lt;/a&gt;&nbsp;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="panel panel-default" style="margin: 10px 0 0 0" id="activities"&gt;<br/>
+       &lt;div class="panel-heading"&gt;<br/>
+        &lt;h3 class="panel-title"&gt;&lt;i class="openOptionTab fa fa-wrench" style="line-height:1.1" data-tab="activity" data-toggle="modal" data-target="#options-modal" onclick="editor.openOptionsTab(this);"&gt;&lt;/i&gt; &lt;a class="accordion-toggle" data-tr-detail="activities" data-toggle="collapse" data-target="#activities-accordion" href="#" onclick="event.preventDefault(); setTimeout(function(){editor.changeOption({activityAccordion: $('#activities-accordion').hasClass('in')});}, 500); editor.checkAccordion();" aria-expanded="true"&gt;Activities&lt;/a&gt;&lt;/h3&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div id="activities-accordion" class="list-group panel-collapse collapse in" style="max-height: 300px; overflow: auto;" aria-expanded="true"&gt;<br/>
+        &lt;div id="for-activity-results"&gt;&lt;/div&gt;<br/>
+        &lt;div id="for-empty-result" style=""&gt;<br/>
+         &lt;div class="list-group-item"&gt;<br/>
+          &lt;p class="message_for_empty_panel"&gt;&lt;span data-tr-detail="keep_track_of_the_number_of_words_you_write_each_day_using_the_activity_button"&gt;Keep track of the number of words you write each day using the activity button.&lt;/span&gt;&lt;button type="button" class="btn btn-default" style="font-style: normal; margin-top: 10px" data-toggle="modal" data-target="#social-login-modal"&gt;&lt;span class="glyphicon glyphicon-stats" style="line-height: 1.1"&gt;&lt;/span&gt; &nbsp;&lt;span style="font-size:90%;" data-tr-detail="activity"&gt;ACTIVITY&lt;/span&gt;&lt;/button&gt;&lt;/p&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="row"&gt;<br/>
+       &lt;div class="col-md-12"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;script&gt;<br/>
+document.getElementById('accordion').style.visibility = 'hidden';<br/>
+window.onload = function() {<br/>
+setTimeout(function() {<br/>
+document.getElementById('accordion').style.visibility = 'visible';<br/>
+}, 500);<br/>
+};<br/>
+&lt;/script&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="clear:both"&gt;&lt;/div&gt;<br/>
+   &lt;div class="modal fade keywordsBox" id="clean-text-modal" tabindex="-1" role="dialog" aria-labelledby="clean-text-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="clean-text-modal-label" data-tr-detail="clean_text_modal_label"&gt;Clean Text&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body auto_scroll_down table-data"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-md-12" style="margin-bottom: 15px"&gt;<br/>
+         &lt;p data-tr-detail="clean_text_modal_text"&gt;This button helps you clean up your document by removing funky characters, unneeded new lines, etc.&lt;/p&gt;<br/>
+         &lt;ul class="task-list"&gt;<br/>
+          &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_clean_text" id="chk_email_fix"&gt;&lt;label for="chk_email_fix" class="ml10" data-tr-detail="email_fix_remove_word_wrapping"&gt;Email Fix (Remove word wrapping)&lt;/label&gt;&lt;/li&gt;<br/>
+          &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_clean_text" id="chk_mwd_fix"&gt;&lt;label for="chk_mwd_fix" class="ml10" data-tr-detail="microsoft_word_document_fix_remove_invalid_characters"&gt;Microsoft Word Document Fix (Remove invalid characters)&lt;/label&gt;&lt;/li&gt;<br/>
+          &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_clean_text" id="chk_multiple_new_lines_fix"&gt;&lt;label for="chk_multiple_new_lines_fix" class="ml10" data-tr-detail="remove_multiple_new_lines"&gt;Remove multiple new lines&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-success" data-dismiss="modal" onclick="editor.cleanText();" data-tr-detail="apply"&gt;Apply&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="cancel"&gt;Cancel&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade keywordsBox" id="share-modal" tabindex="-1" role="dialog" aria-labelledby="share-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="share-modal-label" data-tr-detail="share"&gt;Share&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body auto_scroll_down table-data"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-md-12" style="margin-bottom: 15px"&gt;<br/>
+         &lt;div class="col-md-12" style="margin-bottom: 15px; text-align: center;"&gt;<br/>
+          &lt;b data-tr-detail="preview"&gt;Preview&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="col-md-4"&gt;&lt;/div&gt;<br/>
+         &lt;div class="col-md-4" id="goal1" style="height: 30px;padding-right: 0; display: none"&gt;<br/>
+          &lt;div class="goal_button"&gt;<br/>
+           &lt;div class="progress" style="border: none"&gt;<br/>
+            &lt;div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="goal-progress-bar1"&gt;<br/>
+             &lt;div style="line-height: 21px;"&gt;&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="col-md-4" id="speed1"&gt;<br/>
+          &lt;span class="time-block"&gt;&lt;span id="sw_h1" class="digits"&gt;00&lt;/span&gt;: &lt;span id="sw_m1" class="digits"&gt;00&lt;/span&gt;: &lt;span id="sw_s1" class="digits"&gt;00&lt;/span&gt;: &lt;span id="sw_ms1" class="digits"&gt;00&lt;/span&gt;&lt;/span&gt;&lt;span class="speed-block"&gt;&lt;span data-tr-detail="speed-blog"&gt;Speed&lt;/span&gt;: &lt;span id="wpm1"&gt;0&lt;/span&gt; &lt;span data-tr-detail="wpm"&gt;WPM&lt;/span&gt;&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="col-md-4"&gt;&lt;/div&gt;<br/>
+         &lt;div class="col-md-12" style="text-align: center"&gt;<br/>
+          &lt;a id="download-link" style="margin-top: 5px; display: block" data-tr-detail="download_as_image"&gt;Download as image&lt;/a&gt;&lt;a id="download-as-pdf-link" href="#" style="margin-top: 5px; display: block" onclick="share.createDownloadAsPDFLink(this, event);" data-tr-detail="download_as_PDF"&gt;Download as PDF&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-md-12" style="margin: 15px 0; text-align: center;"&gt;<br/>
+         &lt;b data-tr-detail="step1"&gt;Step 1.&lt;/b&gt; &lt;span data-tr-detail="what_do_you_want_to_say"&gt;What do you want to say?&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-md-12" style="margin-bottom: 15px;"&gt;<br/>
+         &lt;textarea class="form-control" id="sharing_text" rows="3" maxlength="116"&gt;&lt;/textarea&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-md-12" style="margin: 15px 0; text-align: center;"&gt;<br/>
+         &lt;b data-tr-detail="step2"&gt;Step 2.&lt;/b&gt; &lt;span data-tr-detail="where_do_you_want_to_share_it"&gt;Where do you want to share it?&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-6 col-md-6 share_component" id="share_to_facebook"&gt;<br/>
+         &lt;a href="#" style="float: right"&gt;&lt;i class="icons_for_share_fb fa fa-facebook-square"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-6 col-md-6 share_component" id="share_to_twitter"&gt;<br/>
+         &lt;a href="#" style="float: left"&gt;&lt;i class="icons_for_share_tw fa fa-twitter-square"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="success_for_facebook_share" style="display: none;"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="done"&gt;Done&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade keywordsBox" id="share-details-modal" tabindex="-1" role="dialog" aria-labelledby="share-details-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="share-details-modal-label" data-tr-detail="share"&gt;Share&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body table-data auto_scroll_down"&gt;<br/>
+       &lt;div class="col-md-6"&gt;<br/>
+        &lt;p class="share_modal_header"&gt;&lt;b data-tr-detail="preview"&gt;Preview&lt;/b&gt;&lt;/p&gt;<br/>
+        &lt;div id="details_panel1"&gt;<br/>
+         &lt;div class="panel panel-default" style="margin-bottom: 0"&gt;<br/>
+          &lt;div class="panel-heading"&gt;<br/>
+           &lt;h3 class="panel-title" data-tr-detail="my_writing_details"&gt;My Writing Details&lt;/h3&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="list-group"&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="word_count1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="words_label"&gt;Words&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="unique_word_count1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="unique_words"&gt;Unique Words&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="character_count1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="characters_label"&gt;Characters&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="character_count_no_spaces1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="characters_no_spaces"&gt;Characters (no spaces)&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="sentence_count1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="sentences"&gt;Sentences&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="longest_sentence_words1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="longest_sentence_words"&gt;Longest Sentence (words)&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="shortest_sentence_words1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="shortest_sentence_words"&gt;Shortest Sentence (words)&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="avg_sentence_words1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="avg_sentence_words"&gt;Avg. Sentence (words)&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="avg_sentence_chars1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="avg_sentence_chars"&gt;Avg. Sentence (chars)&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="avg_word_length1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="avg_word_length"&gt;Avg. word length&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="paragraph_count1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="paragraphs"&gt;Paragraphs&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="avg_page_by_word1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="pages"&gt;Pages&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="count_words_syllables1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="syllables"&gt;Syllables&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="lines_count1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="lines"&gt;Lines&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="words_manuscript1"&gt;0&lt;/span&gt;&lt;span data-tr-detail="words_publisher"&gt;Words (Publisher)&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="reading_level1"&gt;N/A&lt;/span&gt;&lt;span data-tr-detail="reading_level"&gt;Reading Level&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="reading_time1"&gt;0 sec&lt;/span&gt;&lt;span data-tr-detail="reading_time"&gt;Reading Time&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="speaking_time1"&gt;0 sec&lt;/span&gt;&lt;span data-tr-detail="speaking_time"&gt;Speaking Time&lt;/span&gt;&lt;/li&gt;<br/>
+           &lt;li class="list-group-item"&gt;&lt;span class="badge" id="hand_writing_time1"&gt;0 sec&lt;/span&gt;&lt;span data-tr-detail="hand_writing_time"&gt;Hand Writing Time&lt;/span&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div style="text-align: center"&gt;<br/>
+         &lt;a id="download-details-panel-link" style="margin-top: 5px; display: block" data-tr-detail="download_as_image"&gt;Download as image&lt;/a&gt;&lt;a id="download-details-panel-as-pdf-link" href="#" style="margin-top: 5px; display: block" onclick="share.createDownloadAsPDFLink(this, event, 'details_panel1');" data-tr-detail="download_as_PDF"&gt;Download as PDF&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-md-6"&gt;<br/>
+        &lt;p class="share_modal_header" style="margin: 0"&gt;&lt;b data-tr-detail="step1"&gt;Step 1.&lt;/b&gt; &lt;span data-tr-detail="what_do_you_want_to_share"&gt;What do you want to share?&lt;/span&gt;&lt;/p&gt;<br/>
+        &lt;ul class="task-list"&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_words_share" data-detail="word_count1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_words_share" class="ml10" data-tr-detail="words_label"&gt;Words&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_unique_words_share" data-detail="unique_word_count1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_unique_words_share" class="ml10" data-tr-detail="unique_words"&gt;Unique Words&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_characters_share" data-detail="character_count1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_characters_share" class="ml10" data-tr-detail="characters_label"&gt;Characters&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_character_count_no_spaces_share" data-detail="character_count_no_spaces1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_character_count_no_spaces_share" class="ml10" data-tr-detail="characters_no_spaces"&gt;Characters (no spaces)&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_sentences_share" data-detail="sentence_count1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_sentences_share" class="ml10" data-tr-detail="sentences"&gt;Sentences&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_longest_sentence_words_share" data-detail="longest_sentence_words1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_longest_sentence_words_share" class="ml10" data-tr-detail="longest_sentence_words"&gt;Longest Sentence (words)&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_shortest_sentence_words_share" data-detail="shortest_sentence_words1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_shortest_sentence_words_share" class="ml10" data-tr-detail="shortest_sentence_words"&gt;Shortest Sentence (words)&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_avg_sentence_words_share" data-detail="avg_sentence_words1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_avg_sentence_words_share" class="ml10" data-tr-detail="avg_sentence_words"&gt;Avg. Sentence (words)&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_avg_sentence_chars_share" data-detail="avg_sentence_chars1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_avg_sentence_chars_share" class="ml10" data-tr-detail="avg_sentence_chars"&gt;Avg. Sentence (chars)&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_avg_word_length_share" data-detail="avg_word_length1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_avg_word_length_share" class="ml10" data-tr-detail="avg_word_length"&gt;Avg. word length&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_paragraphs_share" data-detail="paragraph_count1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_paragraphs_share" class="ml10" data-tr-detail="paragraphs"&gt;Paragraphs&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_pages_share" data-detail="avg_page_by_word1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_pages_share" class="ml10" data-tr-detail="pages"&gt;Pages&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_syllables_share" data-detail="count_words_syllables1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_syllables_share" class="ml10" data-tr-detail="syllables"&gt;Syllables&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_lines_share" data-detail="lines_count1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_lines_share" class="ml10" data-tr-detail="lines"&gt;Lines&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_words_manuscript_share" data-detail="words_manuscript1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_words_manuscript_share" class="ml10" data-tr-detail="words_publisher"&gt;Words (Publisher)&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_reading-level_share" data-detail="reading_level1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_reading-level_share" class="ml10" data-tr-detail="reading_level"&gt;Reading Level&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_reading_time_share" data-detail="reading_time1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_reading_time_share" class="ml10" data-tr-detail="reading_time"&gt;Reading Time&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_speaking_time_share" data-detail="speaking_time1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_speaking_time_share" class="ml10" data-tr-detail="speaking_time"&gt;Speaking Time&lt;/label&gt;&lt;/li&gt;<br/>
+         &lt;li class="task-list-item enabled"&gt;&lt;input type="checkbox" class="chk_share_component" id="chk_hand_writing_time_share" data-detail="hand_writing_time1" onclick="share.checkShareComponent(this);"&gt;&lt;label for="chk_hand_writing_time_share" class="ml10" data-tr-detail="hand_writing_time"&gt;Hand Writing Time&lt;/label&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+        &lt;p class="share_modal_header" style="margin-top: 15px"&gt;&lt;b data-tr-detail="step2"&gt;Step 2.&lt;/b&gt; &lt;span data-tr-detail="what_do_you_want_to_say"&gt;What do you want to say?&lt;/span&gt;&lt;/p&gt;&lt;textarea class="form-control" rows="5" id="text_for_details_sharing" maxlength="116" data-tr-detail="text_for_details_sharing"&gt;My writing details at https://wordcounter.net/ #wordcount @wordcounter_net&lt;/textarea&gt;<br/>
+        &lt;p class="share_modal_header" style="margin: 20px 0 0 0"&gt;&lt;b data-tr-detail="step3"&gt;Step 3.&lt;/b&gt; &lt;span data-tr-detail="where_do_you_want_to_share_it"&gt;Where do you want to share it?&lt;/span&gt;&lt;/p&gt;<br/>
+        &lt;div class="col-xs-6 col-md-6 share_component"&gt;<br/>
+         &lt;a href="#" style="float: right" onclick="share.shareImageToFb(event, this, 'details_panel1');"&gt;&lt;i class="icons_for_share_fb fa fa-facebook-square"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-6 col-md-6 share_component"&gt;<br/>
+         &lt;a href="#" style="float: left" onclick="share.twitterShare(event, this, 'details_panel1');"&gt;&lt;i class="icons_for_share_tw fa fa-twitter-square"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-md-12 success_for_facebook_share" style="display: none;"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="done"&gt;Done&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade keywordsBox" id="share-keyword-density-modal" tabindex="-1" role="dialog" aria-labelledby="share-keyword-density-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="share-keyword-density-modal-label" data-tr-detail="share"&gt;Share&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body table-data auto_scroll_down"&gt;<br/>
+       &lt;div class="col-md-6"&gt;<br/>
+        &lt;p class="share_modal_header"&gt;&lt;b data-tr-detail="preview"&gt;Preview&lt;/b&gt;&lt;/p&gt;<br/>
+        &lt;div class="panel panel-default keywordsBox" id="kwd-density1" style="margin-bottom: 0"&gt;<br/>
+         &lt;div class="panel-heading"&gt;<br/>
+          &lt;h3 class="panel-title" data-tr-detail="keyword_density"&gt;Keyword Density&lt;/h3&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="keywords_for_share" class="list-group table-data" style="max-height:300px; overflow:auto"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-md-12" style="text-align: center"&gt;<br/>
+         &lt;a id="download-keyword-density-link" style="margin-top: 5px; display: block" data-tr-detail="download_as_image"&gt;Download as image&lt;/a&gt;&lt;a id="download-keyword-density-as-pdf-link" href="#" style="margin-top: 5px; display: block" onclick="share.createDownloadAsPDFLink(this, event, 'kwd-density1');" data-tr-detail="download_as_PDF"&gt;Download as PDF&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-md-6"&gt;<br/>
+        &lt;p class="share_modal_header"&gt;&lt;b data-tr-detail="step1"&gt;Step 1.&lt;/b&gt; &lt;span data-tr-detail="what_do_you_want_to_say"&gt;What do you want to say?&lt;/span&gt;&lt;/p&gt;&lt;textarea class="form-control" rows="5" id="text_for_keyword_density_sharing" maxlength="116" data-tr-detail="text_for_keyword_density_sharing"&gt;Check out my keyword density for my writing at https://wordcounter.net/ #wordcount @wordcounter_net&lt;/textarea&gt;<br/>
+        &lt;p class="share_modal_header" style="margin: 20px 0 0 0"&gt;&lt;b data-tr-detail="step2"&gt;Step 2.&lt;/b&gt; &lt;span data-tr-detail="where_do_you_want_to_share_it"&gt;Where do you want to share it?&lt;/span&gt;&lt;/p&gt;<br/>
+        &lt;div class="col-xs-6 col-md-6 share_component"&gt;<br/>
+         &lt;a href="#" style="float: right" onclick="share.shareImageToFb(event, this, 'kwd-density1');"&gt;&lt;i class="icons_for_share_fb fa fa-facebook-square"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-6 col-md-6 share_component"&gt;<br/>
+         &lt;a href="#" style="float: left" onclick="share.twitterShare(event, this, 'kwd-density1');"&gt;&lt;i class="icons_for_share_tw fa fa-twitter-square"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class=" col-md-12 success_for_facebook_share" style="display: none;"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="done"&gt;Done&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="upload-file-modal" tabindex="-1" role="dialog" aria-labelledby="upload-file-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="upload-file-modal-label" data-tr-detail="upload_file"&gt;Upload File&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="error_for_uploading_file" style="display: none; margin-top: 15px"&gt;&lt;/div&gt;<br/>
+       &lt;p&gt;&lt;span data-tr-detail="click_the_upload_button_below_to_select_a_text_document"&gt;Click the upload button below to select a text document.&lt;/span&gt;&lt;br&gt;&lt;span data-tr-detail="supported_formats_are_PDF_TXT_DOC_DOCX_ODT"&gt;Supported formats are PDF, TXT, DOC, DOCX, ODT.&lt;/span&gt;&lt;/p&gt;<br/>
+       &lt;div id="file-uploader"&gt;<br/>
+        &lt;div class="ajax-file-upload" style="position: relative; overflow: hidden; cursor: default;"&gt;<br/>
+         Select File<br/>
+         &lt;form method="POST" action="site/upload-file" enctype="multipart/form-data" style="margin: 0px; padding: 0px;"&gt;<br/>
+          &lt;input type="file" id="ajax-upload-id-1705543371992" name="uploading_file" accept="*" style="position: absolute; cursor: pointer; top: 0px; width: 100%; height: 100%; left: 0px; z-index: 100; opacity: 0;"&gt;<br/>
+         &lt;/form&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div&gt;&lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="ajax-file-upload-container"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="close"&gt;Close&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="save-to-drive-modal" tabindex="-1" role="dialog" aria-labelledby="save-to-drive-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="save-to-drive-modal-label" data-tr-detail="save_to_drive_modal"&gt;Save To Drive&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;p data-tr-detail="save_to_drive_text"&gt;Use this button to save your current writing to Google Drive&lt;/p&gt;&lt;label for="file_name" data-tr-detail="file_name"&gt;File Name&lt;/label&gt;&lt;input class="form-control" data-tr-detail="my_saved_draft" value="My Saved Draft" id="file_name"&gt;<br/>
+       &lt;div&gt;<br/>
+        &lt;input type="checkbox" id="include_details" style="margin: 10px 5px 0 0"&gt;&lt;label for="include_details" data-tr-detail="include_details"&gt;Include details&lt;/label&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div id="message_for_save_to_google_drive"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button class="btn btn-success" name="save" onclick="sending();" style="margin-top: 15px; margin-bottom: 15px" data-tr-detail="save_modal_btn"&gt;Save&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="cancel"&gt;Cancel&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="options-modal" tabindex="-1" role="dialog" aria-labelledby="options-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="options-modal-label" data-tr-detail="options_modal"&gt;Options&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12 errorMsg"&gt;&lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;form data-persist="garlic" id="options" class="keywordsBox"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;ul class="nav nav-tabs" role="tablist"&gt;<br/>
+          &lt;li class="active"&gt;&lt;a href="#general" aria-controls="general" role="tab" data-toggle="tab" data-tr-detail="general"&gt;General&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="#details" aria-controls="details" role="tab" data-toggle="tab" data-tr-detail="details_modal_tab"&gt;Details&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="#keyword-density" aria-controls="keyword-density" role="tab" data-toggle="tab" data-tr-detail="keyword_density_modal_tab"&gt;Keyword Density&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="#activity" aria-controls="activity" role="tab" data-toggle="tab" data-tr-detail="activity_modal_tab"&gt;Activity&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="#buttons" aria-controls="buttons" role="tab" data-toggle="tab" data-tr-detail="buttons"&gt;Buttons&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;<br/>
+         &lt;div class="tab-content option-content option-tab table-data"&gt;<br/>
+          &lt;div role="tabpanel" class="tab-pane fade in active" id="general"&gt;<br/>
+           &lt;div class="dropdown"&gt;<br/>
+            &lt;div&gt;<br/>
+             &lt;label for="theme_dropdown" data-tr-detail="theme"&gt;Theme&lt;/label&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="col-md-12 pdl0 pdr0 select_after"&gt;<br/>
+             &lt;select id="theme_dropdown" class="form-control" onchange="editor.changeOption({theme: $(this).val()});"&gt;&lt;option value="default" selected data-tr-detail="default"&gt;Default&lt;/option&gt;&lt;option value="dark" data-tr-detail="dark"&gt;Dark&lt;/option&gt;&lt;option value="blue" data-tr-detail="light_blue"&gt;Light Blue&lt;/option&gt;&lt;option value="dark_blue" data-tr-detail="blue"&gt;Blue&lt;/option&gt;&lt;option value="yellow" data-tr-detail="light_yellow"&gt;Light Yellow&lt;/option&gt;&lt;option value="green" data-tr-detail="light_green"&gt;Light Green&lt;/option&gt;&lt;option value="dark_green" data-tr-detail="green"&gt;Green&lt;/option&gt;&lt;option value="pink" data-tr-detail="light_pink"&gt;Light Pink&lt;/option&gt;&lt;option value="dark_red" data-tr-detail="red"&gt;Red&lt;/option&gt;&lt;option value="purple" data-tr-detail="light_purple"&gt;Light Purple&lt;/option&gt;&lt;option value="dark_purple" data-tr-detail="purple"&gt;Purple&lt;/option&gt;&lt;/select&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div&gt;<br/>
+             &lt;label for="font_dropdown" data-tr-detail="font"&gt;Font&lt;/label&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="col-md-12 pdl0 pdr0 select_after"&gt;<br/>
+             &lt;select id="font_dropdown" class="form-control" onchange="editor.changeOption({font: $(this).val()});"&gt;&lt;option value="Arial" selected&gt;Arial&lt;/option&gt;&lt;option value="Verdana"&gt;Verdana&lt;/option&gt;&lt;option value="Impact"&gt;Impact&lt;/option&gt;&lt;option value="Trebuchet MS"&gt;Trebuchet MS&lt;/option&gt;&lt;option value="Georgia"&gt;Georgia&lt;/option&gt;&lt;option value="Times New Roman"&gt;Times New Roman&lt;/option&gt;&lt;option value="Courier New"&gt;Courier New&lt;/option&gt;&lt;option value="Comic Sans MS"&gt;Comic Sans MS&lt;/option&gt;&lt;/select&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div&gt;<br/>
+             &lt;label for="date_format_dropdown" data-tr-detail="date_format"&gt;Date Format&lt;/label&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="col-md-12 pdl0 pdr0 select_after"&gt;<br/>
+             &lt;select id="date_format_dropdown" class="form-control" onchange="editor.changeOption({dateFormat: $(this).val()});"&gt;&lt;option value="Y-m-d" data-tr-detail="date_format1"&gt;2024-01-17&lt;/option&gt;&lt;option value="M d y" data-tr-detail="date_format2"&gt;Jan 17 24&lt;/option&gt;&lt;option value="M d Y" data-tr-detail="date_format3"&gt;Jan 17 2024&lt;/option&gt;&lt;option value="d-m-y" data-tr-detail="date_format4"&gt;17-01-24&lt;/option&gt;&lt;option value="d-m-Y" data-tr-detail="date_format5"&gt;17-01-2024&lt;/option&gt;&lt;option value="d/m/Y" data-tr-detail="date_format6" selected&gt;17/01/2024&lt;/option&gt;&lt;option value="d M y" data-tr-detail="date_format7"&gt;17 Jan 24&lt;/option&gt;&lt;option value="D j/n/Y" data-tr-detail="date_format8"&gt;Wed 17/1/2024&lt;/option&gt;&lt;option value="jS of F Y" data-tr-detail="date_format9"&gt;17th of January 2024&lt;/option&gt;&lt;option value="l jS of F" data-tr-detail="date_format10"&gt;Wednesday 17th of January&lt;/option&gt;&lt;/select&gt;&lt;select id="date_format_dropdown_hidden" class="form-control"&gt;&lt;option value="Y-m-d" data-tr-detail-hidden="date_format1"&gt;2024-01-17&lt;/option&gt;&lt;option value="M d y" data-tr-detail-hidden="date_format2"&gt;Jan 17 24&lt;/option&gt;&lt;option value="M d Y" data-tr-detail-hidden="date_format3"&gt;Jan 17 2024&lt;/option&gt;&lt;option value="d-m-y" data-tr-detail-hidden="date_format4"&gt;17-01-24&lt;/option&gt;&lt;option value="d-m-Y" data-tr-detail-hidden="date_format5"&gt;17-01-2024&lt;/option&gt;&lt;option value="d/m/Y" data-tr-detail-hidden="date_format6"&gt;17/01/2024&lt;/option&gt;&lt;option value="d M y" data-tr-detail-hidden="date_format7"&gt;17 Jan 24&lt;/option&gt;&lt;option value="D j/n/Y" data-tr-detail-hidden="date_format8"&gt;Wed 17/1/2024&lt;/option&gt;&lt;option value="jS of F Y" data-tr-detail-hidden="date_format9"&gt;17th of January 2024&lt;/option&gt;&lt;option value="l jS of F" data-tr-detail-hidden="date_format10"&gt;Wednesday 17th of January&lt;/option&gt;&lt;/select&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div&gt;<br/>
+             &lt;label for="time_format_dropdown" data-tr-detail="time_format"&gt;Time Format&lt;/label&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="col-md-12 pdl0 pdr0 select_after"&gt;<br/>
+             &lt;select id="time_format_dropdown" class="form-control" onchange="editor.changeOption({timeFormat: $(this).val()});"&gt;&lt;option value="g:i A"&gt;9:02 PM&lt;/option&gt;&lt;option value="h:i A" data-tr-detail="with_a_leading_zero" selected&gt;09:02 PM (with a leading zero)&lt;/option&gt;&lt;option value="G:i" data-tr-detail="24_hour"&gt;21:02 (24 hour)&lt;/option&gt;&lt;option value="H:i" data-tr-detail="24_hour_with_a_leading_zero"&gt;21:02 (24-hour with a leading zero)&lt;/option&gt;&lt;/select&gt;&lt;select id="time_format_dropdown_hidden" class="form-control" onchange="editor.changeOption({timeFormat: $(this).val()});"&gt;&lt;option value="g:i A"&gt;9:02 PM&lt;/option&gt;&lt;option value="h:i A" data-tr-detail-hidden="with_a_leading_zero"&gt;09:02 PM (with a leading zero)&lt;/option&gt;&lt;option value="G:i" data-tr-detail-hidden="24_hour"&gt;21:02 (24 hour)&lt;/option&gt;&lt;option value="H:i" data-tr-detail-hidden="24_hour_with_a_leading_zero"&gt;21:02 (24-hour with a leading zero)&lt;/option&gt;&lt;/select&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="clearfix"&gt;&lt;/div&gt;<br/>
+           &lt;div class="checkbox"&gt;<br/>
+            &lt;label&gt;&lt;input type="checkbox" id="autoResizeTextArea" onchange="editor.changeOption({boxHeight:{'boxAutoSize': $(this).prop('checked')}});" checked&gt; &lt;span data-tr-detail="automatically_resize_the_text_box_as_I_type"&gt;Automatically resize the text box as I type&lt;/span&gt;&lt;/label&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div role="tabpanel" class="tab-pane fade" id="details"&gt;<br/>
+           &lt;div class="checkbox"&gt;<br/>
+            &lt;label style="font-weight:bold"&gt;&lt;input type="checkbox" id="show-details" onclick="editor.changeOption({'detailsPanel': $(this).prop('checked')}); editor.checkCollapses();"&gt; &lt;span data-tr-detail="turn_on_details_panel"&gt;Turn on Details panel&lt;/span&gt;&lt;/label&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;p data-tr-detail="details_tab_text"&gt;You can turn on or off different counting options here.&lt;/p&gt;<br/>
+           &lt;div class="row" id="details_buttons"&gt;<br/>
+            &lt;div class="col-md-6" style="padding-right: 10px"&gt;<br/>
+             &lt;ul class="task-list"&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_avg_sentence_chars" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_avg_sentence_chars" data-detail="avg_sentence_chars"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_avg_sentence_chars" class="ml10" data-tr-detail="avg_sentence_chars"&gt;Avg. Sentence (chars)&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_avg_sentence_words" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_avg_sentence_words" data-detail="avg_sentence_words"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_avg_sentence_words" class="ml10" data-tr-detail="avg_sentence_words"&gt;Avg. Sentence (words)&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_avg_word_length" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_avg_word_length" data-detail="avg_word_length"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_avg_word_length" class="ml10" data-tr-detail="avg_word_length"&gt;Avg. word length&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_character_count bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_character_count" data-detail="character_count"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_character_count" class="ml10" data-tr-detail="characters_label"&gt;Characters&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_character_count_no_spaces" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_character_count_no_spaces" data-detail="character_count_no_spaces"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_character_count_no_spaces" class="ml10" data-tr-detail="characters_no_spaces"&gt;Characters (no spaces)&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_hand_writing_time" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_hand_writing_time" data-detail="hand_writing_time"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_hand_writing_time" class="ml10" data-tr-detail="hand_writing_time"&gt;Hand Writing Time&lt;/label&gt;&lt;a style="margin-left: 5px; opacity: 1; pointer-events: all;" role="button" data-toggle="collapse" href="#collapseForHandWritingTime" aria-expanded="false" aria-controls="collapseForHandWritingTime"&gt;&lt;i class="fa fa-wrench" style="line-height:1.1"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+               &lt;div class="collapse" id="collapseForHandWritingTime"&gt;<br/>
+                &lt;div class="well"&gt;<br/>
+                 &lt;div&gt;<br/>
+                  &lt;label for="letters_per_minute" class="mb0 label_width_for_letters_per_minute" data-tr-detail="letters_per_minute_label"&gt;Letters Per Minute &lt;/label&gt;&lt;input class="form-control" id="letters_per_minute" value="68" type="number" min="10" max="400" onchange="editor.changeOption({'lettersPerMinuteForHandWriting': $(this).val()});" onkeyup="editor.changeOption({'lettersPerMinuteForHandWriting': $(this).val()});"&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div style="margin-top: 10px;"&gt;<br/>
+                  &lt;button type="button" class="btn btn-default" data-number="26" onclick="editor.setLPM(this);" data-tr-detail="slow"&gt;Slow&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-number="68" onclick="editor.setLPM(this);" data-tr-detail="normal"&gt;Normal&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-number="113" onclick="editor.setLPM(this);" data-tr-detail="fast"&gt;Fast&lt;/button&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10 mt10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_lines_count" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_lines_count" data-detail="lines_count"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_lines_count" class="ml10" data-tr-detail="lines"&gt;Lines&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_longest_sentence_words" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_longest_sentence_words" data-detail="longest_sentence_words"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_longest_sentence_words" class="ml10" data-tr-detail="longest_sentence_words"&gt;Longest Sentence (words)&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_avg_page_by_word" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_avg_page_by_word" data-detail="avg_page_by_word"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_avg_page_by_word" class="ml10" data-tr-detail="pages"&gt;Pages&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_paragraph_count bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_paragraph_count" data-detail="paragraph_count"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_paragraph_count" class="ml10" data-tr-detail="paragraphs"&gt;Paragraphs&lt;/label&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="col-md-6"&gt;<br/>
+             &lt;ul class="task-list"&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_reading_level bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_reading_level" data-detail="reading_level"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_reading_level" class="ml10" data-tr-detail="reading_level"&gt;Reading Level&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_reading_time bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_reading_time" data-detail="reading_time"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_reading_time" class="ml10" data-tr-detail="reading_time"&gt;Reading Time&lt;/label&gt;&lt;a style="margin-left: 5px; opacity: 1; pointer-events: all;" role="button" data-toggle="collapse" href="#collapseForReadingTime" aria-expanded="false" aria-controls="collapseForReadingTime" class="collapsed"&gt;&lt;i class="fa fa-wrench" style="line-height:1.1"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+               &lt;div class="collapse" id="collapseForReadingTime" aria-expanded="false"&gt;<br/>
+                &lt;div class="well"&gt;<br/>
+                 &lt;div&gt;<br/>
+                  &lt;label for="words_per_minut_reading" class="mb0 label_width_for_words_per_minut" data-tr-detail="words_per_minute_label"&gt;Words Per Minute &lt;/label&gt;&lt;input class="form-control" id="words_per_minut_reading" value="275" type="number" min="1" onchange="editor.changeOption({'wordsPerMinuteForReading': $(this).val()});" onkeyup="editor.changeOption({'wordsPerMinuteForReading': $(this).val()});"&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div style="margin-top: 10px;"&gt;<br/>
+                  &lt;button type="button" class="btn btn-default" data-number="200" onclick="editor.setWPM(this, 'reading');" data-tr-detail="slow"&gt;Slow&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-number="275" onclick="editor.setWPM(this, 'reading');" data-tr-detail="normal"&gt;Normal&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-number="350" onclick="editor.setWPM(this, 'reading');" data-tr-detail="fast"&gt;Fast&lt;/button&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_sentence_count bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_sentence_count" data-detail="sentence_count"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_sentence_count" class="ml10" data-tr-detail="sentences"&gt;Sentences&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_shortest_sentence_words" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_shortest_sentence_words" data-detail="shortest_sentence_words"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_shortest_sentence_words" class="ml10" data-tr-detail="shortest_sentence_words"&gt;Shortest Sentence (words)&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_speaking_time bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_speaking_time" data-detail="speaking_time"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_speaking_time" class="ml10" data-tr-detail="speaking_time"&gt;Speaking Time&lt;/label&gt;&lt;a style="margin-left: 5px; opacity: 1; pointer-events: all;" role="button" data-toggle="collapse" href="#collapseForSpeakingTime" aria-expanded="false" aria-controls="collapseForSpeakingTime" class="collapsed"&gt;&lt;i class="fa fa-wrench" style="line-height:1.1"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+               &lt;div class="collapse" id="collapseForSpeakingTime" aria-expanded="false"&gt;<br/>
+                &lt;div class="well"&gt;<br/>
+                 &lt;div&gt;<br/>
+                  &lt;label for="words_per_minut_speaking" class="mb0 label_width_for_words_per_minut" data-tr-detail="words_per_minute_label"&gt;Words Per Minute &lt;/label&gt;&lt;input class="form-control" id="words_per_minut_speaking" value="150" type="number" min="1" onchange="editor.changeOption({'wordsPerMinuteForSpeaking': $(this).val()});" onkeyup="editor.changeOption({'wordsPerMinuteForSpeaking': $(this).val()});"&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div style="margin-top: 10px;"&gt;<br/>
+                  &lt;button type="button" class="btn btn-default" data-number="100" onclick="editor.setWPM(this, 'speaking');" data-tr-detail="slow"&gt;Slow&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-number="150" onclick="editor.setWPM(this, 'speaking');" data-tr-detail="normal"&gt;Normal&lt;/button&gt;&lt;button type="button" class="btn btn-default" data-number="200" onclick="editor.setWPM(this, 'speaking');" data-tr-detail="fast"&gt;Fast&lt;/button&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_count_words_syllables" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_count_words_syllables" data-detail="count_words_syllables"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_count_words_syllables" class="ml10" data-tr-detail="syllables"&gt;Syllables&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_unique_word_count" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_unique_word_count" data-detail="unique_word_count"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_unique_word_count" class="ml10" data-tr-detail="unique_words"&gt;Unique Words&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-chk_word_count bootstrap-switch-on" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_word_count" data-detail="word_count"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_word_count" class="ml10" data-tr-detail="words_label"&gt;Words&lt;/label&gt;&lt;/li&gt;<br/>
+              &lt;li class="task-list-item enabled mb10"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-chk_words_manuscript" style="opacity: 1; pointer-events: all;"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input type="checkbox" data-size="small" class="task-list-item-checkbox chk-details" value="on" id="chk_words_manuscript" data-detail="words_manuscript"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;&lt;label for="chk_words_manuscript" class="ml10" data-tr-detail="words_publisher"&gt;Words (Publisher)&lt;/label&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div role="tabpanel" class="tab-pane fade" id="keyword-density"&gt;<br/>
+           &lt;div class="checkbox"&gt;<br/>
+            &lt;label style="font-weight:bold"&gt;&lt;input type="checkbox" id="show-keyword-density" onclick="editor.changeOption({'keywordDensityPanel': $(this).prop('checked')}); editor.checkCollapses();"&gt; &lt;span data-tr-detail="turn_on_keyword_density_panel"&gt;Turn on Keyword Density panel&lt;/span&gt;&lt;/label&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="textbox"&gt;<br/>
+            &lt;span data-tr-detail="show"&gt;Show&lt;/span&gt; &lt;input type="number" class="form-control input-sm" id="keywordDensityAmount" value="10" min="0" max="100" onchange="if($(this).val() &gt;= 0 &amp;&amp; $(this).val() &lt;=100) editor.changeOption({'keywordDensityAmount': $(this).val()});" onkeyup="if($(this).val() &gt;= 0 &amp;&amp; $(this).val() &lt;=100) editor.changeOption({'keywordDensityAmount': $(this).val()});"&gt; &lt;span data-tr-detail="keywords_in_the"&gt;keywords in the&lt;/span&gt; &lt;i data-tr-detail="keyword_density"&gt;Keyword Density&lt;/i&gt; &lt;span data-tr-detail="box"&gt;box&lt;/span&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="textbox" style="margin-top: 15px"&gt;<br/>
+            &lt;span data-tr-detail="find"&gt;Find&lt;/span&gt; &lt;input type="number" class="form-control input-sm" id="keywordDensityConsecutive" value="1" min="1" max="10" onchange="if($(this).val() &gt;= 1 &amp;&amp; $(this).val() &lt;=10) editor.changeOption({'keywordDensityConsecutive': $(this).val()});" onkeyup="if($(this).val() &gt;= 1 &amp;&amp; $(this).val() &lt;=10) editor.changeOption({'keywordDensityConsecutive': $(this).val()});"&gt; &lt;span data-tr-detail="consecutive_words"&gt;Consecutive Words&lt;/span&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="checkbox"&gt;<br/>
+            &lt;label&gt;&lt;input type="checkbox" id="stopWordsCommon" onchange="editor.changeOption({'keywordDensityWordsCommon': $(this).prop('checked')});"&gt; &lt;span data-tr-detail="include_common_words_in_word_density_count"&gt;Include common words in word density count&lt;/span&gt;&lt;/label&gt;<br/>
+           &lt;/div&gt;&lt;button class="btn btn-primary" id="reset_ignored_words" onclick="editor.resetIgnoredWords(event);" disabled&gt;&lt;span data-tr-detail="reset_ignored_words"&gt;Reset Ignored Words&lt;/span&gt; (&lt;span id="count_of_adding_words"&gt;0&lt;/span&gt;)&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div role="tabpanel" class="tab-pane fade" id="activity"&gt;<br/>
+           &lt;div class="checkbox"&gt;<br/>
+            &lt;label style="font-weight:bold"&gt;&lt;input type="checkbox" id="show-activity" onclick="editor.changeOption({'activityPanel': $(this).prop('checked')}); editor.checkCollapses();"&gt; &lt;span data-tr-detail="turn_on_activity_panel"&gt;Turn on Activity panel&lt;/span&gt;&lt;/label&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="textbox"&gt;<br/>
+            &lt;span data-tr-detail="show"&gt;Show&lt;/span&gt; &lt;input class="form-control" type="number" id="activityAmount" style="display: inline-block; width: 15%; border-top-right-radius: 0; border-bottom-right-radius: 0; border-right: none" value="5" min="0" max="25" onchange="if($(this).val() &gt;= 0 &amp;&amp; $(this).val() &lt;=25) {editor.changeOption({'activityAmount': $(this).val()}); editor.showActivities();}" onkeyup="if($(this).val() &gt;= 0 &amp;&amp; $(this).val() &lt;=25) { editor.changeOption({'activityAmount': $(this).val()}); editor.showActivities(); }"&gt;&lt;span class="select_after"&gt;&lt;select class="form-control" id="activityType" style="display: inline-block; width: 20%; border-top-left-radius: 0; border-bottom-left-radius: 0" onchange="editor.changeOption({'activityType': $(this).val()}); editor.showActivities();"&gt;&lt;option value="daily" data-tr-detail="days"&gt;days&lt;/option&gt;&lt;option value="weekly" data-tr-detail="weeks"&gt;weeks&lt;/option&gt;&lt;option value="monthly" data-tr-detail="months"&gt;months&lt;/option&gt;&lt;option value="yearly" data-tr-detail="years"&gt;years&lt;/option&gt;&lt;/select&gt;&lt;/span&gt;&lt;span data-tr-detail="in_the_acivity_box"&gt; in the Acivity box&lt;/span&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div role="tabpanel" class="tab-pane fade" id="buttons"&gt;<br/>
+           &lt;p data-tr-detail="buttons_tab_text"&gt;You can turn on or off different buttons provided for different functionalities.&lt;/p&gt;<br/>
+           &lt;div class="row"&gt;<br/>
+            &lt;ul class="task-list"&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-activity-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-activity-btn" data-detail="activity-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-activity-btn" class="mb0" data-tr-detail="activity"&gt;ACTIVITY&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="activity_btn_text"&gt;Keeps track of your word and character count.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-revisions-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-revisions-btn" data-detail="revisions-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-revisions-btn" class="mb0" data-tr-detail="auto_save"&gt;AUTO-SAVE&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="auto_save_btn_text"&gt;When turned on, WordCounter will automatically save your document every 30 seconds. You can then switch back to previous versions of your document at any time.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-case-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-case-btn" data-detail="case-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-case-btn" class="mb0" data-tr-detail="case"&gt;CASE&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="case_btn_text"&gt;Gives different case options. Applies to your entire document or only the text you select.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-clean-text-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-clean-text-btn" data-detail="clean-text-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-clean-text-btn" class="mb0" data-tr-detail="clean_text"&gt;CLEAN TEXT&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="clean_text_btn_text"&gt;After pasting a document into WordCounter, this will clean it up by removing invalid characters, word wrapping issues and unneeded new lines.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-clear-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-clear-btn" data-detail="clear-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-clear-btn" class="mb0" data-tr-detail="clear"&gt;CLEAR&lt;/label&gt;&lt;span class="help-block mt0 mb0" id="clear_requires" data-tr-detail="clear_btn_text"&gt;Delete all of the text in your document.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-download-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-download-btn" data-detail="download-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-download-btn" class="mb0" data-tr-detail="download"&gt;DOWNLOAD&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="download_btn_text"&gt;Download your written text (PDF, TXT, DOC) to your device.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-find-and-replace-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="off" id="btn-find-and-replace-btn" data-detail="find-and-replace-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-find-and-replace-btn" class="mb0" data-tr-detail="find_and_replace"&gt;FIND AND REPLACE&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="find_and_replace_btn_text"&gt;Find and replace any words or sentences you want.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-goal-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="off" id="btn-goal-btn" data-detail="goal-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-goal-btn" class="mb0" data-tr-detail="goal"&gt;GOAL&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="goal_btn_text"&gt;Set writing goals (such as 500 words) and WordCounter will let you know when you've reached them. You can also share and embed your goals.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-print-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-print-btn" data-detail="print-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-print-btn" class="mb0" data-tr-detail="print"&gt;Print&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="print_btn_text"&gt;Print your document quickly and easily.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-text-to-speech-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-text-to-speech-btn" data-detail="text-to-speech-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-text-to-speech-btn" class="mb0"&gt;&lt;span data-tr-detail="proof_read"&gt;PROOF READ&lt;/span&gt;&nbsp; &lt;a role="button" data-toggle="collapse" href="#collapseForRead" aria-expanded="false" aria-controls="collapseForRead" class="collapsed"&gt;&lt;i class="fa fa-wrench" style="line-height:1.1"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/label&gt;&lt;span class="help-block mt0 mb0" id="proof_read_requires" data-tr-detail="proof_read_btn_text"&gt;WordCounter reads your document back to you. Make sure to turn up your volume!&lt;/span&gt;<br/>
+               &lt;div class="collapse" id="collapseForRead" aria-expanded="false"&gt;<br/>
+                &lt;div class="well"&gt;<br/>
+                 &lt;div class="mb10"&gt;<br/>
+                  &lt;label for="read_rate" class="mb0 mr10 label_width_for_read" data-tr-detail="rate"&gt;Rate&lt;/label&gt;&lt;input class="form-control" id="read_rate" value="1" type="number" min="0.1" max="10" step="0.1" onchange="editor.changeOption({'readRate': $(this).val()});" onkeyup="editor.changeOption({'readRate': $(this).val()});"&gt;&lt;span class="help-block mt0 mb0 valid_values" data-tr-detail="valid_values_are_0.1_to_10"&gt;Valid values are 0.1 to 10&lt;/span&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="mb10"&gt;<br/>
+                  &lt;label for="read_pitch" class="mb0 mr10 label_width_for_read" data-tr-detail="pitch"&gt;Pitch&lt;/label&gt;&lt;input class="form-control" id="read_pitch" value="1" type="number" min="0" max="2" onchange="editor.changeOption({'readPitch': $(this).val()});" onkeyup="editor.changeOption({'readPitch': $(this).val()});"&gt;&lt;span class="help-block mt0 mb0 valid_values" data-tr-detail="valid_values_are_0_to_2"&gt;Valid values are 0 to 2&lt;/span&gt;<br/>
+                 &lt;/div&gt;&lt;label for="read_voices" class="mb0 mr10 label_width_for_read" data-tr-detail="voices"&gt;Voices&lt;/label&gt;&lt;select class=" form-control" id="read_voices" onchange="editor.changeOption({'readVoices': $(this).val()});" onkeyup="editor.changeOption({'readVoices': $(this).val()});"&gt;&lt;option selected value="0"&gt;Microsoft Helena - Spanish (Spain)&lt;/option&gt;&lt;option value="1"&gt;Microsoft Laura - Spanish (Spain)&lt;/option&gt;&lt;option value="2"&gt;Microsoft Pablo - Spanish (Spain)&lt;/option&gt;&lt;/select&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-redo-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-redo-btn" data-detail="redo-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-redo-btn" class="mb0" data-tr-detail="redo"&gt;REDO&lt;/label&gt;&lt;span class="help-block mt0 mb0" id="redo_requires" data-tr-detail="redo_btn_text"&gt;Redo your last changes. Click multiple times to redo multiple changes.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-save-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-save-btn" data-detail="save-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-save-btn" class="mb0" data-tr-detail="save"&gt;SAVE&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="save_btn_text"&gt;Saves your text for later retrieval. Be sure and click the SAVE button each time you want to save.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-save-to-drive-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-save-to-drive-btn" data-detail="save-to-drive-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-save-to-drive-btn" class="mb0" data-tr-detail="save_to_drive"&gt;SAVE TO DRIVE&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="save_to_drive_btn_text"&gt;Saves your document to Google Drive. Great for backup purposes.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-speed-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-speed-btn" data-detail="speed-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-speed-btn" class="mb0" data-tr-detail="speed"&gt;SPEED&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="speed_btn_text"&gt;Use a timer to see how fast you're typing.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-spell-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-spell-btn" data-detail="spell-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-spell-btn" class="mb0" data-tr-detail="spell"&gt;GRAMMAR &amp; SPELL CHECK&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="spell_btn_text"&gt;A powerful spelling and grammar checker for your document.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-speech-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-speech-btn" data-detail="speech-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-speech-btn" class="mb0"&gt;&lt;span data-tr-detail="talk_to_type"&gt;TALK TO TYPE&lt;/span&gt;&nbsp; &lt;a role="button" data-toggle="collapse" href="#collapseForSpeech" aria-expanded="false" aria-controls="collapseForSpeech" class="collapsed"&gt;&lt;i class="fa fa-wrench" style="line-height:1.1"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/label&gt;&lt;span class="help-block mt0 mb0" id="talk_to_type_requires" data-tr-detail="talk_to_type_btn_text"&gt;Speak into your microphone and WordCounter will type for you.&lt;/span&gt;<br/>
+               &lt;div class="collapse" id="collapseForSpeech" aria-expanded="false"&gt;<br/>
+                &lt;div class="well"&gt;<br/>
+                 &lt;div class="mb10"&gt;<br/>
+                  &lt;label for="select_language" class="mb0 mr10 label_width_for_speech" data-tr-detail="language"&gt;Language&lt;/label&gt;&lt;select class="form-control" id="select_language" onchange="editor.updateCountry(); editor.changeOption({'selectLanguage': $(this).val()});"&gt;&lt;option value="0"&gt;Afrikaans&lt;/option&gt;&lt;option value="1"&gt;Bahasa Indonesia&lt;/option&gt;&lt;option value="2"&gt;Bahasa Melayu&lt;/option&gt;&lt;option value="3"&gt;Català&lt;/option&gt;&lt;option value="4"&gt;Čeština&lt;/option&gt;&lt;option value="5"&gt;Dansk&lt;/option&gt;&lt;option value="6"&gt;Deutsch&lt;/option&gt;&lt;option value="7"&gt;English&lt;/option&gt;&lt;option value="8"&gt;Español&lt;/option&gt;&lt;option value="9"&gt;Euskara&lt;/option&gt;&lt;option value="10"&gt;Filipino&lt;/option&gt;&lt;option value="11"&gt;Français&lt;/option&gt;&lt;option value="12"&gt;Galego&lt;/option&gt;&lt;option value="13"&gt;Hrvatski&lt;/option&gt;&lt;option value="14"&gt;IsiZulu&lt;/option&gt;&lt;option value="15"&gt;Íslenska&lt;/option&gt;&lt;option value="16"&gt;Italiano&lt;/option&gt;&lt;option value="17"&gt;Lietuvių&lt;/option&gt;&lt;option value="18"&gt;Magyar&lt;/option&gt;&lt;option value="19"&gt;Nederlands&lt;/option&gt;&lt;option value="20"&gt;Norsk bokmål&lt;/option&gt;&lt;option value="21"&gt;Polski&lt;/option&gt;&lt;option value="22"&gt;Português&lt;/option&gt;&lt;option value="23"&gt;Română&lt;/option&gt;&lt;option value="24"&gt;Slovenščina&lt;/option&gt;&lt;option value="25"&gt;Slovenčina&lt;/option&gt;&lt;option value="26"&gt;Suomi&lt;/option&gt;&lt;option value="27"&gt;Svenska&lt;/option&gt;&lt;option value="28"&gt;Tiếng Việt&lt;/option&gt;&lt;option value="29"&gt;Türkçe&lt;/option&gt;&lt;option value="30"&gt;Ελληνικά&lt;/option&gt;&lt;option value="31"&gt;български&lt;/option&gt;&lt;option value="32"&gt;Pусский&lt;/option&gt;&lt;option value="33"&gt;Српски&lt;/option&gt;&lt;option value="34"&gt;Українська&lt;/option&gt;&lt;option value="35"&gt;한국어&lt;/option&gt;&lt;option value="36"&gt;中文&lt;/option&gt;&lt;option value="37"&gt;日本語&lt;/option&gt;&lt;option value="38"&gt;हिन्दी&lt;/option&gt;&lt;option value="39"&gt;ภาษาไทย&lt;/option&gt;&lt;/select&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div&gt;<br/>
+                  &lt;label for="select_dialect" class="mr10 label_width_for_speech" data-tr-detail="country" style="visibility: visible;"&gt;Country&lt;/label&gt;&lt;select class="form-control" id="select_dialect" onchange="editor.changeOption({'selectDialect': $(this).val()});" onkeyup="editor.changeOption({'selectDialect': $(this).val()});" style="visibility: visible;"&gt;&lt;option value="en-AU"&gt;Australia&lt;/option&gt;&lt;option value="en-CA"&gt;Canada&lt;/option&gt;&lt;option value="en-IN"&gt;India&lt;/option&gt;&lt;option value="en-NZ"&gt;New Zealand&lt;/option&gt;&lt;option value="en-ZA"&gt;South Africa&lt;/option&gt;&lt;option value="en-GB"&gt;United Kingdom&lt;/option&gt;&lt;option value="en-US"&gt;United States&lt;/option&gt;&lt;/select&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-thesaurus-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-thesaurus-btn" data-detail="thesaurus-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-thesaurus-btn" class="mb0" data-tr-detail="thesaurus"&gt;THESAURUS&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="thesaurus_btn_text"&gt;Select (with your mouse) a word in your document and click the thesaurus button to get a list of synonyms.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-btn-undo-btn bootstrap-switch-on"&gt;<br/>
+                &lt;div class="bootstrap-switch-container" style="margin-left: 0px;"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-undo-btn" data-detail="undo-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-undo-btn" class="mb0" data-tr-detail="undo"&gt;UNDO&lt;/label&gt;&lt;span class="help-block mt0 mb0" id="undo_requires" data-tr-detail="undo_btn_text"&gt;Undo your last changes. Click multiple times to undo multiple changes.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+             &lt;li class="task-list-item enabled mb10"&gt;<br/>
+              &lt;div class="col-sm-3 col-xs-12 pull-left"&gt;<br/>
+               &lt;div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-small bootstrap-switch-id-btn-upload-btn"&gt;<br/>
+                &lt;div class="bootstrap-switch-container"&gt;<br/>
+                 &lt;span class="bootstrap-switch-handle-on bootstrap-switch-primary"&gt;ON&lt;/span&gt;&lt;span class="bootstrap-switch-label"&gt;&nbsp;&lt;/span&gt;&lt;span class="bootstrap-switch-handle-off bootstrap-switch-default"&gt;OFF&lt;/span&gt;&lt;input data-size="small" type="checkbox" class="task-list-item-checkbox btn_details" value="on" id="btn-upload-btn" data-detail="upload-btn"&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="col-sm-9 col-xs-12 pull-left"&gt;<br/>
+               &lt;label for="btn-upload-btn" class="mb0" data-tr-detail="upload"&gt;UPLOAD&lt;/label&gt;&lt;span class="help-block mt0 mb0" data-tr-detail="upload_btn_text"&gt;Upload your existing document (PDF, TXT, DOC, DOCX, ODT) into WordCounter.&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/form&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="done"&gt;Done&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="set-goal-modal" role="dialog" tabindex="-1" aria-labelledby="set-goal-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="set-goal-modal-label" data-tr-detail="goals"&gt;Goals&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12 errorMsgBox"&gt;&lt;/div&gt;<br/>
+        &lt;div class="col-xs-12" id="create_new_goal"&gt;<br/>
+         &lt;h4 data-tr-detail="new_goal"&gt;New Goal&lt;/h4&gt;<br/>
+         &lt;div class="col-xs-12"&gt;<br/>
+          &lt;p data-tr-detail="new_goal_text"&gt;Enter the number of characters, words, sentences or paragraphs you want to set for a goal.&lt;/p&gt;<br/>
+          &lt;form onsubmit="if(goal.checkTypeAccessibility()){editor.createGoal();} return false;"&gt;<br/>
+           &lt;div class="col-sm-4 col-xs-3 pr0"&gt;<br/>
+            &lt;input type="number" class="form-control" data-tr-detail="quantity" placeholder="Quantity" id="goalQty" min="0" max="100000" onkeydown="editor.setGoalQuantity(event, this);"&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="col-sm-3 col-xs-3 pl0 pr0 select_after"&gt;<br/>
+            &lt;select class="form-control" id="goalType" onchange="editor.setQuantityPlaceholder(this);"&gt;&lt;option value="word_count" data-tr-detail="words_label" data-value="Words"&gt;Words&lt;/option&gt;&lt;option value="character_count" data-tr-detail="characters_label" data-value="Characters"&gt;Characters&lt;/option&gt;&lt;option value="sentence_count" data-tr-detail="sentences" data-value="Sentences"&gt;Sentences&lt;/option&gt;&lt;option value="paragraph_count" data-tr-detail="paragraphs" data-value="Paragraphs"&gt;Paragraphs&lt;/option&gt;&lt;option value="avg_page_by_word" data-tr-detail="pages" data-value="Pages"&gt;Pages&lt;/option&gt;&lt;option value="reading_time" data-tr-detail="reading_time" data-value="Reading Time"&gt;Reading Time&lt;/option&gt;&lt;option value="speaking_time" data-tr-detail="speaking_time" data-value="Speaking Time"&gt;Speaking Time&lt;/option&gt;&lt;option value="words_manuscript" data-tr-detail="publisher_words" data-value="Publisher Words"&gt;Publisher Words&lt;/option&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="col-sm-3 col-xs-3 pl0 pr0 select_after"&gt;<br/>
+            &lt;select class="form-control" id="goalLengthType"&gt;&lt;option value="min" data-tr-detail="minimum"&gt;Minimum&lt;/option&gt;&lt;option value="max" data-tr-detail="maximum"&gt;Maximum&lt;/option&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="col-sm-2 col-xs-3"&gt;<br/>
+            &lt;button type="submit" class="btn btn-info" id="set-goal-btn" data-tr-detail="create"&gt;Create&lt;/button&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/form&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12" style="margin-top: 15px;"&gt;<br/>
+         &lt;h4 data-tr-detail="existing_goals"&gt;Existing Goals&lt;/h4&gt;<br/>
+         &lt;div class="col-xs-12"&gt;<br/>
+          &lt;p data-tr-detail="existing_goals_text"&gt;You can set, delete and edit your goals.&lt;/p&gt;<br/>
+          &lt;div id="existing_goals" class="col-xs-12"&gt;&lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="close"&gt;Close&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="embed-goal-modal" role="dialog" tabindex="-1" aria-labelledby="embed-goal-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="embed-goal-modal-label" data-tr-detail="embed_goal_modal_title"&gt;Embed Your Goal into your Web Page&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12"&gt;<br/>
+         &lt;div class="mb100"&gt;<br/>
+          &lt;div class="well" data-tr-detail="embed_goal_modal_text"&gt;<br/>
+           Here you can build your very own goal progress bar that you can put on your website, blog or in your signature on other websites. Choose a size and color, then click Save. Finally, click the View Code button to get your code.<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="row"&gt;<br/>
+           &lt;div class="form-group col-md-3" style="margin-left: 25%;"&gt;<br/>
+            &lt;span data-tr-detail="size"&gt;Size&lt;/span&gt;&lt;select id="size" name="font" class="form-control" onchange="setGoalButtonSize(this); showHide();"&gt;&lt;option value="small" data-tr-detail="small"&gt;Small&lt;/option&gt;&lt;option value="middle" data-tr-detail="medium"&gt;Medium&lt;/option&gt;&lt;option value="large" data-tr-detail="large"&gt;Large&lt;/option&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="form-group col-md-3"&gt;<br/>
+            &lt;label for="col" data-tr-detail="color"&gt;Color&lt;/label&gt;&lt;select id="col" name="col" class="form-control" onchange="setGoalButtonColor(this); showHide();"&gt;&lt;option value="blue" selected data-tr-detail="blue_default"&gt;Blue (default)&lt;/option&gt;&lt;option value="red" data-tr-detail="red"&gt;Red&lt;/option&gt;&lt;option value="green" data-tr-detail="green"&gt;Green&lt;/option&gt;&lt;option value="yellow" data-tr-detail="yellow"&gt;Yellow&lt;/option&gt;&lt;option value="pink" data-tr-detail="pink"&gt;Pink&lt;/option&gt;&lt;option value="cyan" data-tr-detail="cyan"&gt;Cyan&lt;/option&gt;&lt;option value="brown" data-tr-detail="brown"&gt;Brown&lt;/option&gt;&lt;option value="purple" data-tr-detail="purple"&gt;Purple&lt;/option&gt;&lt;option value="orange" data-tr-detail="orange"&gt;Orange&lt;/option&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div style="padding-right: 15px; padding-left: 15px"&gt;<br/>
+           &lt;div class="row goal_button"&gt;<br/>
+            &lt;div class="col-xs-12" id="embed_goal_button_area"&gt;<br/>
+             &lt;div class="progress"&gt;<br/>
+              &lt;div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="goal-progress-bar"&gt;<br/>
+               &lt;div&gt;&lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div id="percent_text"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="row"&gt;<br/>
+           &lt;div class="col-md-12 save_changes" style="text-align: center;"&gt;<br/>
+            &lt;div class="copy_and_save"&gt;<br/>
+             &lt;button id="embed-goal-btn" class="btn btn-success" data-tr-detail="save_and_get_code"&gt;Save and Get Code&lt;/button&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="embed_code_txt"&gt;<br/>
+           &lt;div contenteditable="true" id="embed_input"&gt;&lt;/div&gt;&lt;br&gt;&lt;button class="btn btn-default" id="copy-text-btn"&gt;&lt;span class="glyphicon glyphicon-copy"&gt;&lt;/span&gt;&lt;span data-tr-detail="copy"&gt;Copy&lt;/span&gt;&lt;/button&gt;&nbsp; &lt;button id="embed-goal-code-hide-btn" class="btn btn-info" data-tr-detail="hide_code"&gt;Hide Code&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="close"&gt;Close&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="activity-modal" tabindex="-1" role="dialog" aria-labelledby="activity-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="activity-modal-label" data-tr-detail="activities"&gt;Activities&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="error_for_save_word_count" style="display: none; margin-top: 15px"&gt;&lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12" style="margin-top: 15px;"&gt;<br/>
+         &lt;p data-tr-detail="activity_modal_text"&gt;Record your count of words and characters.&lt;/p&gt;<br/>
+         &lt;h4 data-tr-detail="new_activity"&gt;New Activity&lt;/h4&gt;<br/>
+         &lt;div class="col-xs-12"&gt;<br/>
+          &lt;div class="col-xs-5"&gt;<br/>
+           &lt;label for="words_record_input" data-tr-detail="words_label"&gt;Words&lt;/label&gt;&lt;input id="words_record_input" type="number" min="0" value="0" class="form-control input-sm"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="col-xs-5"&gt;<br/>
+           &lt;label for="characters_record_input" data-tr-detail="characters_label"&gt;Characters&lt;/label&gt;&lt;input id="characters_record_input" type="number" min="0" value="0" class="form-control input-sm"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="col-xs-12" style="margin-bottom: 5px"&gt;&lt;/div&gt;<br/>
+          &lt;div class="col-xs-10"&gt;<br/>
+           &lt;label for="notes" data-tr-detail="notes"&gt;Notes&lt;/label&gt;&lt;input id="notes" type="text" maxlength="255" data-tr-detail="leave_your_notes" value="" placeholder="Leave your notes" class="form-control input-sm"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="col-xs-2"&gt;<br/>
+           &lt;button style="position: absolute; top: -6px;" class="btn btn-success" onclick="editor.saveRecord();" data-tr-detail="save_modal_btn"&gt;Save&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12" style="margin-top: 15px;"&gt;<br/>
+         &lt;h4 data-tr-detail="previous_activities"&gt;Previous Activities&lt;/h4&gt;<br/>
+         &lt;div class="col-xs-12"&gt;<br/>
+          &lt;p data-tr-detail="you_can_edit_and_delete_your_records"&gt;You can edit and delete your records.&lt;/p&gt;<br/>
+          &lt;div id="existing_records" class="col-xs-12"&gt;&lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="close"&gt;Close&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="save-modal" tabindex="-1" role="dialog" aria-labelledby="save-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="save-modal-label" data-tr-detail="document"&gt;Document&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="error_for_save_document" style="display: none; margin-top: 15px"&gt;&lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12" style="margin-top: 15px;"&gt;<br/>
+         &lt;h4 data-tr-detail="new_document"&gt;New Document&lt;/h4&gt;<br/>
+         &lt;div class="col-xs-12"&gt;<br/>
+          &lt;div class="col-xs-12"&gt;<br/>
+           &lt;label for="document_name" data-tr-detail="document_name"&gt;Document Name&lt;/label&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="col-xs-9 col-sm-10"&gt;<br/>
+           &lt;input id="document_name" type="text" class="form-control input-sm"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="col-xs-3 col-sm-2"&gt;<br/>
+           &lt;button style="float: right" class="btn btn-success" onclick="editor.saveDocument();" data-tr-detail="save_modal_btn"&gt;Save&lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12" style="margin-top: 15px;"&gt;<br/>
+         &lt;h4 data-tr-detail="previous_documents"&gt;Previous Documents&lt;/h4&gt;<br/>
+         &lt;div class="col-xs-12"&gt;<br/>
+          &lt;p data-tr-detail="you_can_load_edit_and_delete_your_documents"&gt;You can load, edit and delete your documents.&lt;/p&gt;<br/>
+          &lt;div id="existing_documents" class="col-xs-12"&gt;&lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" data-dismiss="modal" data-tr-detail="close"&gt;Close&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="modal fade" id="find-and-replace-modal" tabindex="-1" role="dialog" aria-labelledby="find-and-replace-modal-label" aria-hidden="true"&gt;<br/>
+    &lt;div class="modal-dialog"&gt;<br/>
+     &lt;div class="modal-content"&gt;<br/>
+      &lt;div class="modal-header"&gt;<br/>
+       &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+       &lt;h4 class="modal-title" id="find-and-replace-modal-label" data-tr-detail="find_and_replace_modal_label"&gt;Find and Replace&lt;/h4&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-body"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12"&gt;<br/>
+         &lt;label for="searched_text" data-tr-detail="searched_text"&gt;Searched Text&lt;/label&gt;&lt;input id="searched_text" type="text" class="form-control input-sm"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 mt10"&gt;<br/>
+         &lt;label for="replacement_text" data-tr-detail="replacement_text"&gt;Replacement Text&lt;/label&gt;&lt;input id="replacement_text" type="text" class="form-control input-sm"&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="row mt10"&gt;<br/>
+        &lt;div class="col-xs-12"&gt;<br/>
+         &lt;input id="whole_words" type="checkbox" style="margin-right: 5px"&gt;&lt;label for="whole_words" data-tr-detail="whole_words_only"&gt;Whole words only&lt;/label&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-xs-12"&gt;<br/>
+         &lt;input id="replace_all" type="checkbox" style="margin-right: 5px"&gt;&lt;label for="replace_all" data-tr-detail="replace_all_at_once"&gt;Replace all at once&lt;/label&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="message_for_find_and_replace" style="display: none; margin-top: 15px"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="modal-footer"&gt;<br/>
+       &lt;button type="button" class="btn btn-default" onclick="editor.findAndReplace();" data-tr-detail="find_and_replace_modal_label"&gt;Find and Replace&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div contenteditable="true" style="visibility: hidden;" id="for_counting_characters"&gt;<br/>
+    &lt;span&gt;a&lt;/span&gt;&lt;span&gt;b&lt;/span&gt;&lt;span&gt;c&lt;/span&gt;&lt;span&gt;d&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;f&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;h&lt;/span&gt;&lt;span&gt;i&lt;/span&gt;&lt;span&gt;j&lt;/span&gt;&lt;span&gt;k&lt;/span&gt;&lt;span&gt;l&lt;/span&gt;&lt;span&gt;m&lt;/span&gt;&lt;span&gt;n&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;p&lt;/span&gt;&lt;span&gt;q&lt;/span&gt;&lt;span&gt;r&lt;/span&gt;&lt;span&gt;s&lt;/span&gt;&lt;span&gt;t&lt;/span&gt;&lt;span&gt;u&lt;/span&gt;&lt;span&gt;v&lt;/span&gt;&lt;span&gt;w&lt;/span&gt;&lt;span&gt;x&lt;/span&gt;&lt;span&gt;y&lt;/span&gt;&lt;span&gt;z&lt;/span&gt;&lt;span&gt; &lt;/span&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="wc_footer"&gt;<br/>
+   &lt;div class="container"&gt;<br/>
+    &lt;div class="col-md-3"&gt;<br/>
+     &lt;h5&gt;&lt;span data-tr-detail="site_map"&gt;Site Map&lt;/span&gt;&lt;/h5&gt;<br/>
+     &lt;ul style="list-style-type: none; padding:0"&gt;<br/>
+      &lt;li&gt;&lt;a href="/" data-tr-detail="home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/blog/" data-tr-detail="blog"&gt;Blog&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/our-tools" data-tr-detail="more_tools"&gt;More Tools&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/help-us" data-tr-detail="help_WordCounter"&gt;Help WordCounter&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/embed" data-tr-detail="embed_WordCounter"&gt;Embed WordCounter&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="col-md-5"&gt;<br/>
+     &lt;h5&gt;&nbsp;&lt;/h5&gt;<br/>
+     &lt;ul style="list-style-type: none; padding:0"&gt;<br/>
+      &lt;li&gt;&lt;a href="/blog/contact-us" data-tr-detail="report_a_bug"&gt;Report a Bug&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/blog/contact-us" data-tr-detail="contact_us"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="/blog/privacy-policy" data-tr-detail="privacy_policy"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="col-md-2"&gt;<br/>
+     &lt;h5&gt;&lt;span data-tr-detail="follow"&gt;Follow&lt;/span&gt;&lt;/h5&gt;<br/>
+     &lt;ul class="sprite"&gt;<br/>
+      &lt;li class="facebook"&gt;&lt;a target="_blank" href="https://www.facebook.com/wordcounter.net/"&gt;Facebook &lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="twitter"&gt;&lt;a target="_blank" href="https://twitter.com/wordcounter_net"&gt;Twitter&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script src="/min/6a61d0daa78cf57fb741ff6f69b169f8c5f21875.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript"&gt;jQuery(document).ready(function () {<br/>
+$('#w1').authchoice();<br/>
+$('a[data-link="signupFormLink"]').click(function(){<br/>
+$('.login-form').addClass('hidden');<br/>
+$('.signup-form').removeClass('hidden');<br/>
+});<br/>
+$('a[data-link="loginFormLink"]').click(function(){<br/>
+$('.login-form').removeClass('hidden');<br/>
+$('.signup-form').addClass('hidden');<br/>
+});<br/>
+$('#w2').authchoice();<br/>
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-email","name":"email","container":".field-loginform-email","input":"#loginform-email","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*&lt;[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?&gt;$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});}}], {"errorSummary":".error-summary.alert.alert-danger"});<br/>
+jQuery('#signup-form').yiiActiveForm([{"id":"signupform-email","name":"email","container":".field-signupform-email","input":"#signupform-email","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*&lt;[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?&gt;$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});yii.validation.string(value, messages, {"message":"Email must be a string.","max":255,"tooLong":"Email should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"signupform-email_repeat","name":"email_repeat","container":".field-signupform-email_repeat","input":"#signupform-email_repeat","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email Repeat cannot be blank."});}},{"id":"signupform-password","name":"password","container":".field-signupform-password","input":"#signupform-password","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});yii.validation.string(value, messages, {"message":"Password must be a string.","min":6,"tooShort":"Password should contain at least 6 characters.","skipOnEmpty":1});}},{"id":"signupform-password_repeat","name":"password_repeat","container":".field-signupform-password_repeat","input":"#signupform-password_repeat","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password Repeat cannot be blank."});}}], {"errorSummary":".error-summary.alert.alert-danger"});<br/>
+});&lt;/script&gt;<br/>
+  &lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-VWP02GM480"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+window.dataLayer = window.dataLayer || [];<br/>
+function gtag(){dataLayer.push(arguments);}<br/>
+gtag('js', new Date());<br/>
+gtag('config', 'G-VWP02GM480');<br/>
+gtag('event', 'login_status', { 'status': 'Not Logged In' });<br/>
+&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+var dataObj;<br/>
+if($.cookie('optionsObject')) {<br/>
+dataObj = JSON.parse($.cookie('optionsObject'));<br/>
+$("#theme").attr("href", $('#data-block').data('css-path') + dataObj.theme + '.css');<br/>
+}<br/>
+else {<br/>
+$("#theme").attr("href", $('#data-block').data('css-path') + 'default.css');<br/>
+}<br/>
+var url = window.location.href;<br/>
+var root = 'https://wordcounter.net/';<br/>
+var a_href = url.replace(root, '/');<br/>
+$('#wc_navbar').find('a').each(function (key, value){<br/>
+if($(value).attr('href') == a_href){<br/>
+var dropdownMenu = $('#wc-dropdown-menu');<br/>
+var activeBar = $('a.active_bar');<br/>
+$(value).addClass('active_bar');<br/>
+if(a_href == '/our-tools') {<br/>
+activeBar.css('font-weight', 'bold');<br/>
+dropdownMenu.css({<br/>
+'background-color': '#F2F7FB',<br/>
+'color': '#000000',<br/>
+'border-top-left-radius': '3px',<br/>
+'border-top-right-radius': '3px'<br/>
+});<br/>
+dropdownMenu.hover({<br/>
+'background-color': '#F2F7FB',<br/>
+'color': '#000000'<br/>
+});<br/>
+}<br/>
+else if(a_href == '/help-us') {<br/>
+activeBar.css('font-weight', 'bold');<br/>
+dropdownMenu.css({<br/>
+'background-color': '#FFFFFF',<br/>
+'color': '#000000',<br/>
+'border-top-left-radius': '3px',<br/>
+'border-top-right-radius': '3px'<br/>
+});<br/>
+dropdownMenu.hover({<br/>
+'background-color': '#FFFFFF',<br/>
+'color': '#000000'<br/>
+});<br/>
+}<br/>
+else {<br/>
+activeBar.css('background-color', '#FFFFFF');<br/>
+activeBar.hover(function(){<br/>
+$(this).css('background-color', '#FFFFFF');<br/>
+});<br/>
+}<br/>
+}<br/>
+else {<br/>
+$(value).removeClass('active_bar')<br/>
+}<br/>
+});<br/>
+&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+var SetGlobalPreloaderState = function (percentFrom, percentTo) {<br/>
+$('#globalPreloader div').css({ width: percentFrom + '%' });<br/>
+$('#globalPreloader').show();<br/>
+$('#globalPreloader div').animate({ width: percentTo + '%' }, 1000, function () {<br/>
+jQuery('#globalPreloader').hide();<br/>
+});<br/>
+};<br/>
+var InitiatializeGlobalPreloader = function () {<br/>
+window.onbeforeunload = function () { SetGlobalPreloaderState(0, 30); };<br/>
+};<br/>
+$(document).ready(function () {<br/>
+InitiatializeGlobalPreloader();<br/>
+SetGlobalPreloaderState(30, 100);<br/>
+});<br/>
+&lt;/script&gt;<br/>
+  &lt;div class="modal fade" id="foundBugModal" tabindex="-1" role="dialog" aria-labelledby="foundBugModalLabel" aria-hidden="true"&gt;<br/>
+   &lt;div class="modal-dialog"&gt;<br/>
+    &lt;div class="modal-content"&gt;<br/>
+     &lt;div class="modal-header"&gt;<br/>
+      &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;<br/>
+      &lt;h4 class="modal-title" id="foundBugModalLabel"&gt;Found a Bug&lt;/h4&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="modal-body"&gt;<br/>
+      &lt;textarea rows="5" class="form-control" placeholder="What problem do you see?" name="message" id="message"&gt;&lt;/textarea&gt;&lt;button class="btn btn-default" name="send" id="submit" onclick="editor.sendMessage();" style="margin-top: 15px; margin-bottom: 15px"&gt;Send&lt;/button&gt;<br/>
+      &lt;div class="alert alert-warning" style="display: none; position: absolute; z-index: 9999; left: 20%; right: 20%;"&gt;<br/>
+       &lt;a href="#" class="close" data-dismiss="alert" aria-label="close"&gt;×&lt;/a&gt;&lt;strong&gt;No speech was detected!&lt;/strong&gt; You may need to adjust your microphone settings.<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="success" style="display: none;"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="modal-footer"&gt;<br/>
+      &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Done&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;&lt;iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fwordcounter.net" title="Twitter settings iframe" style="display: none;"&gt;&lt;/iframe&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
