@@ -32,7 +32,7 @@ public class ContadorPalabras {
                     ArrayList<String> palabras = new ArrayList<String>();
                     HashMap<String,Integer> palabras2 = new HashMap<String,Integer>();
                     BufferedReader archivoLeer = new BufferedReader(new FileReader(archivo));
-
+                    System.out.println(archivoLeer.read());
                     String lineaLeida;
 
                     // MIENTRAS LA LINEA LEIDA NO SEA NULL
@@ -60,7 +60,7 @@ public class ContadorPalabras {
                         System.out.println(k + " : " + palabras2.get(k));
                     }
                     System.out.println("");
-                    System.out.println("Numero de palabras*****: " + palabras.size());
+                    System.out.println("Numero de palabras: " + palabras.size());
 
                     // CIERRA LA LECTURA
                     archivoLeer.close();
